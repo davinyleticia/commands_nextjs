@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Header from "../components/header/Header";
 import Hero from "../components/Hero";
-import Service from '../components/Service';
+import Curso from '../components/curso/Curso';
 import About from '../components/About';
 import Footer from '../components/Footer';
 
@@ -10,7 +10,7 @@ const Index = () => {
     <Layout pageTitle="AfuLink Certificação e Treinamentos">
       <Header url={'.'}/>
       <Hero />
-      <Service />
+      <Curso />
       <About />
       <Footer />
     </Layout>

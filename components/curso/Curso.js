@@ -1,9 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
+import { Content, Description, Title } from './curso.styled';
 
-const Service = () => {
+const Curso = () => {
   const services = [
-    { title : "Lorem Ipsum", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
+    { title : "Bash Básico", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
     { title : "Lorem Ipsum", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
     { title : "Lorem Ipsum", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
     { title : "Lorem Ipsum", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
@@ -26,13 +27,10 @@ const Service = () => {
           {
             services.map((service, key) =>
               <Col key={key} lg={4} md={6}>
-                <div>
-                  <div className="mb-5">
-                      <i className={service.icon}></i>
-                  </div>
-                  <h5 className="text-dark font-weight-normal pt-1 mb-4">{service.title}</h5>
-                  <p className="text-muted mb-4">{service.desc}</p>
-                </div>
+                <Content>
+                  <Title className="text-dark font-weight-normal pt-1 mb-4">{service.title}</Title>
+                  <Description className="text-muted mb-4">{service.desc}</Description>
+                </Content>
               </Col>
             )
           }
@@ -42,4 +40,4 @@ const Service = () => {
   );
 }
 
-export default Service;
+export default Curso;
