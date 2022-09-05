@@ -13,5 +13,5 @@ export const Btn = styled.div`
 `;
 
 export const Button = styled.button`
-    margin: 0;
+    margin: 0 !important;
 `;
