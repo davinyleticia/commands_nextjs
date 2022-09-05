@@ -5,7 +5,7 @@ import { Content, Description, Title } from './curso.styled';
 const Curso = () => {
   const services = [
     { title : "Bash Básico", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", url: 'https://google.com' },
-    { title : "FileSytem LInux", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", url: 'https://google.com'},
+    { title : "FileSytem Linux", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", url: 'https://google.com'},
     { title : "Primeira Lei de Ohm", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", url: 'https://google.com'},
     { title : "Arquitetura Básica do Computador", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", url: 'https://google.com'},
     { title : "Reactjs Básico", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", url: 'https://google.com'},
