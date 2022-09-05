@@ -17,7 +17,7 @@ const About = () => {
         </Row>
         <Row>
           <Col md={4}>
-            <h5 className="font-weight-light line-height-1_6 text-dark mb-4">“A educação exige os maiores cuidados, porque influi sobre toda a vida.”</h5><p>Sêneca,  filósofo, advogado e escritor.</p>
+            <h4 className="font-weight-light line-height-1_6 text-dark mb-4">“A educação exige os maiores cuidados, porque influi sobre toda a vida.”</h4><p>Sêneca,  filósofo, advogado e escritor.</p>
           </Col>
           <Col md={{ size:7, offset :1 }}>
             <Row>
