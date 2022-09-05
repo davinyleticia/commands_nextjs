@@ -17,16 +17,16 @@ const About = () => {
         </Row>
         <Row>
           <Col md={4}>
-            <h2 className="font-weight-light line-height-1_6 text-dark mb-4">Lorem Ipsum has been the industry's standard dummy text</h2>
+            <h5 className="font-weight-light line-height-1_6 text-dark mb-4">“A educação exige os maiores cuidados, porque influi sobre toda a vida.”</h5><p>Sêneca,  filósofo, advogado e escritor.</p>
           </Col>
           <Col md={{ size:7, offset :1 }}>
             <Row>
               <Col md={6}>
                 <h6 className="text-dark font-weight-light f-20 mb-3">Nossa Missão</h6>
-                <p className="text-muted font-weight-light">Ser lider em certificação e gerenciamento de estrategia em treinamentos nas empresas e escola</p>
+                <p className="text-muted font-weight-light">Ser lider em certificação e gerenciamento de estratégia em treinamentos nas empresas e escola</p>
               </Col>
               <Col md={6}>
-                <h6 className="text-dark font-weight-light f-20 mb-3">Our Vision</h6>
+                <h6 className="text-dark font-weight-light f-20 mb-3">Nossa Visão</h6>
                 <p className="text-muted font-weight-light">ser Interuptivo, inclusivo, aproximar culturas e povos atraves do compatilhamento do conhecimento</p>
               </Col>
             </Row>
