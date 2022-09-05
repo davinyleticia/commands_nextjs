@@ -22,11 +22,11 @@ const About = () => {
           <Col md={{ size:7, offset :1 }}>
             <Row>
               <Col md={6}>
-                <h6 className="text-dark font-weight-light f-20 mb-3">Nossa Missão</h6>
+                <h5 className="text-dark font-weight-light f-20 mb-3">Nossa Missão</h5>
                 <p className="text-muted font-weight-light">Ser lider em certificação e gerenciamento de estratégia em treinamentos nas empresas e escola</p>
               </Col>
               <Col md={6}>
-                <h6 className="text-dark font-weight-light f-20 mb-3">Nossa Visão</h6>
+                <h5 className="text-dark font-weight-light f-20 mb-3">Nossa Visão</h5>
                 <p className="text-muted font-weight-light">ser Interuptivo, inclusivo, aproximar culturas e povos atraves do compatilhamento do conhecimento</p>
               </Col>
             </Row>
