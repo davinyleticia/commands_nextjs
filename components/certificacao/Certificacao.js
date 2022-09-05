@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
 import { GrSend } from 'react-icons/gr';
-import { Btn, Input } from './certificacao.styled';
+import { Btn, Input, Button } from './certificacao.styled';
 
 const FeatureBox = (props) => {
   return (
@@ -25,7 +25,7 @@ const FeatureBox = (props) => {
                 {feature.isInput ?
                 <Btn>
                 <Input placeholder='Digite o Código' />
-                <button className="btn btn-warning mt-3">Validar <GrSend /></button>
+                <Button className="btn btn-warning mt-3">Validar <GrSend /></Button>
                 </Btn>
                 : 
                 <a href={feature.link} className="f-16 text-warning">Read More <span className="right-icon ml-2">&#8594;</span></a>}
