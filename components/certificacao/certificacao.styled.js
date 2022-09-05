@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 export const Input = styled.input`
     border: 1px solid #e6e6e6;
-    margin: 0 1rem !important;
+    border-radius: 5px;
+    margin: 0 1rem 0 0 !important;
 `;
 
 export const Btn = styled.div`
