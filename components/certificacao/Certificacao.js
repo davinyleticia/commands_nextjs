@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
 import { GrSend } from 'react-icons/gr';
+import { Btn, Input } from './styles';
 
 const FeatureBox = (props) => {
   return (
@@ -22,10 +23,10 @@ const FeatureBox = (props) => {
                 <h5 className="text-dark font-weight-normal mb-3 pt-3">{feature.title}</h5>
                 <p className="text-muted mb-3 f-15">{feature.desc}</p>
                 {feature.isInput ?
-                <>
-                <input placeholder='Digite o Código' />
+                <Btn>
+                <Input placeholder='Digite o Código' />
                 <button className="btn btn-warning mt-3">Validar <GrSend /></button>
-                </>
+                </Btn>
                 : 
                 <a href={feature.link} className="f-16 text-warning">Read More <span className="right-icon ml-2">&#8594;</span></a>}
               </div>
