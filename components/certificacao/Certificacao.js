@@ -59,7 +59,7 @@ const FeatureBox = (props) => {
 const Certificacao = () => {
 
   const features = [
-    {id : 1, img : "./images/45.png", title : "Validar Certificado", desc : "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.", link : "/", isInput: true},
+    {id : 1, img : "./images/45.png", title : "Validar Certificado", desc : "Valida aqui o seu certificado emitido pela AfuLink, o nosso sistema anti-fraude atrela um código único para cada certficado", link : "/", isInput: true},
     {id : 2, img : "./images/Group Members.png", title : "Fazer Prova de Certificação", desc : "Sed perspiciatis unde omnis natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo excepturi sint occaecati cupiditate architecto.", link : "/",  isInput: false},
   ];
 
