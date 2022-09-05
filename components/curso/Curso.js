@@ -4,12 +4,12 @@ import { Content, Description, Title } from './curso.styled';
 
 const Curso = () => {
   const services = [
-    { title : "Bash Básico", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
-    { title : "FileSytem LInux", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
-    { title : "Primeira Lei de Ohm", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
-    { title : "Arquitetura Básica do Computador", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
-    { title : "Reactjs Básico", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
-    { title : "Custom Hooks Reactjs", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
+    { title : "Bash Básico", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", url: 'https://google.com' },
+    { title : "FileSytem LInux", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", url: 'https://google.com'},
+    { title : "Primeira Lei de Ohm", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", url: 'https://google.com'},
+    { title : "Arquitetura Básica do Computador", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", url: 'https://google.com'},
+    { title : "Reactjs Básico", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", url: 'https://google.com'},
+    { title : "Custom Hooks Reactjs", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s", url: 'https://google.com'},
   ]
   
   return (
@@ -27,7 +27,7 @@ const Curso = () => {
           {
             services.map((service, key) =>
               <Col key={key} lg={4} md={6}>
-                <Content>
+                <Content href={service.url}>
                   <Title className="text-dark font-weight-normal pt-1 mb-4">{service.title}</Title>
                   <Description className="text-muted mb-4">{service.desc}</Description>
                 </Content>
