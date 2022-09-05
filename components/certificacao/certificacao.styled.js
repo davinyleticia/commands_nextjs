@@ -3,13 +3,14 @@ import styled from "styled-components";
 
 export const Input = styled.input`
     border: 1px solid #e6e6e6;
+    margin: 0 1rem !important;
 `;
 
 export const Btn = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: stretch;
 `;
 
 export const Button = styled.button`
