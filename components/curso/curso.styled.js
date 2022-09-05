@@ -13,9 +13,11 @@ export const Content = styled.div`
 export const Title = styled.h4`
     font-size: 1.2rem;
     font-weight: 600;
+    color: #000;
 `;  
 
 export const Description = styled.p`
     font-size: 1rem;
     font-weight: 300;   
+    color: #000 !important;
 `;

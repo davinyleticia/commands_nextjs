@@ -5,11 +5,11 @@ import { Content, Description, Title } from './curso.styled';
 const Curso = () => {
   const services = [
     { title : "Bash Básico", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
-    { title : "Lorem Ipsum", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
-    { title : "Lorem Ipsum", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
-    { title : "Lorem Ipsum", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
-    { title : "Lorem Ipsum", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
-    { title : "Lorem Ipsum", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
+    { title : "FileSytem LInux", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
+    { title : "Primeira Lei de Ohm", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
+    { title : "Arquitetura Básica do Computador", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
+    { title : "Reactjs Básico", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
+    { title : "Custom Hooks Reactjs", desc : "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" },
   ]
   
   return (
