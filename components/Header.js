@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import {
-  Container,
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
-  NavLink
-} from 'reactstrap';
+  NavLink,
+  Container,
+} from "reactstrap";
+import { NavbarHeader, Image } from "./header/header.styled";
 
-const Header = () => {
+const Header = ({url}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
   });
 
   const handleScroll = () => {
@@ -25,13 +25,16 @@ const Header = () => {
     } else if (window.scrollY < 90) {
       setSticky(false);
     }
-  }
+  };
 
   return (
-    <div className={`header${sticky ? ' sticky' : ''}`}>
+    <div className={`header${sticky ? " sticky" : ""}`}>
       <Navbar light expand="md">
         <Container>
-          <NavbarBrand href="/">LOGO</NavbarBrand>
+          <NavbarHeader href="/">
+              <Image src="./images/logo.svg" width={40} height={40} />
+              <h1>afulink</h1>
+          </NavbarHeader>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="m-auto" navbar>
@@ -39,13 +42,13 @@ const Header = () => {
                 <NavLink href="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#feature">Features</NavLink>
+                <NavLink href="/certificado">Certificados</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#service">Services</NavLink>
+                <NavLink href={`${url}/#service`}>Cursos</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#about">About</NavLink>
+                <NavLink href={`${url}/#about`}>Sobre</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -53,6 +56,6 @@ const Header = () => {
       </Navbar>
     </div>
   );
-}
+};
 
 export default Header;

@@ -9,10 +9,8 @@ import Footer from '../components/Footer';
 const Index = () => {
   return (
     <Layout pageTitle="AfuLink Treinamentos">
-      <Header url={'.'}/>
-      <Hero />
-      <Service />
-      <About />
+      <Header url={'..'} />
+      <Feature/>
       <Footer />
     </Layout>
   )
