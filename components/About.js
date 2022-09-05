@@ -22,12 +22,12 @@ const About = () => {
           <Col md={{ size:7, offset :1 }}>
             <Row>
               <Col md={6}>
-                <h6 className="text-dark font-weight-light f-20 mb-3">Our Mission</h6>
-                <p className="text-muted font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+                <h6 className="text-dark font-weight-light f-20 mb-3">Nossa Missão</h6>
+                <p className="text-muted font-weight-light">Ser lider em certificação e gerenciamento de estrategia em treinamentos nas empresas e escola</p>
               </Col>
               <Col md={6}>
                 <h6 className="text-dark font-weight-light f-20 mb-3">Our Vision</h6>
-                <p className="text-muted font-weight-light">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+                <p className="text-muted font-weight-light">ser Interuptivo, inclusivo, aproximar culturas e povos atraves do compatilhamento do conhecimento</p>
               </Col>
             </Row>
           </Col>
