@@ -27,7 +27,7 @@ const About = () => {
               </Col>
               <Col md={6}>
                 <h5 className="text-dark font-weight-light f-20 mb-3">Nossa Visão</h5>
-                <p className="text-muted font-weight-light">ser Interuptivo, inclusivo, aproximar culturas e povos atraves do compatilhamento do conhecimento</p>
+                <p className="text-muted font-weight-light">ser Interuptivo, inclusivo, aproximar culturas e povos através do compatilhamento do conhecimento</p>
               </Col>
             </Row>
           </Col>
