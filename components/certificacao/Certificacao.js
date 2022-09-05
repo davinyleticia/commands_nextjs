@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
 import { GrSend } from 'react-icons/gr';
-import { Btn, Input } from './styles';
+import { Btn, Input } from './certificacao.styled';
 
 const FeatureBox = (props) => {
   return (
