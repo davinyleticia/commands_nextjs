@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "reactstrap";
+import { GrSend } from 'react-icons/gr';
 
 const FeatureBox = (props) => {
   return (
@@ -20,7 +21,13 @@ const FeatureBox = (props) => {
                 </div>
                 <h5 className="text-dark font-weight-normal mb-3 pt-3">{feature.title}</h5>
                 <p className="text-muted mb-3 f-15">{feature.desc}</p>
-                <a href={feature.link} className="f-16 text-warning">Read More <span className="right-icon ml-2">&#8594;</span></a>
+                {feature.isInput ?
+                <>
+                <input placeholder='Digite o Código' />
+                <button className="btn btn-warning mt-3">Validar <GrSend /></button>
+                </>
+                : 
+                <a href={feature.link} className="f-16 text-warning">Read More <span className="right-icon ml-2">&#8594;</span></a>}
               </div>
             </Col>
         </Row>
@@ -48,11 +55,11 @@ const FeatureBox = (props) => {
   );
 }
 
-const Feature = () => {
+const Certificacao = () => {
 
   const features = [
-    {id : 1, img : "./images/45.png", title : "Validar Certificado", desc : "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.", link : "/"},
-    {id : 2, img : "./images/Group Members.png", title : "Fazer Prova de Certificação", desc : "Sed perspiciatis unde omnis natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo excepturi sint occaecati cupiditate architecto.", link : "/"},
+    {id : 1, img : "./images/45.png", title : "Validar Certificado", desc : "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.", link : "/", isInput: true},
+    {id : 2, img : "./images/Group Members.png", title : "Fazer Prova de Certificação", desc : "Sed perspiciatis unde omnis natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo excepturi sint occaecati cupiditate architecto.", link : "/",  isInput: false},
   ];
 
   return (
@@ -72,4 +79,4 @@ const Feature = () => {
   );
 }
 
-export default Feature;
+export default Certificacao;
