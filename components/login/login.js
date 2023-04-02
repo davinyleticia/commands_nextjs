@@ -10,7 +10,7 @@ const FeatureBox = () => {
         <Btn>
           <Input placeholder="E-mail" />
           <Input placeholder="Senha" />
-          <Button className="btn btn-warning mt-3">
+          <Button as="a" href="https://sysapp.afu.link" className="btn btn-warning mt-3">
             login <GrSend />
           </Button>
         </Btn>
