@@ -6,7 +6,7 @@ const Services = () => {
   const services = [
     {
       img: "images/logo-tp.svg",
-      desc: "Assina nossa newlleter mesal, e segue no nossas redes, um local com dicas para todos os gosto.",
+      desc: "Assina nossa newlleter mesal, e segue nas nossas redes, um local com dicas para todos os gosto.",
       url: "https://tipsbook.info",
     },
     {
