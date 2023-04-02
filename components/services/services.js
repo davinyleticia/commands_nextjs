@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { BtnCard, Content, Description, Img } from "./services.styled";
+import { BtnCard, Content, Description, Img, Title } from "./services.styled";
 
 const Services = () => {
   const services = [
@@ -8,20 +8,28 @@ const Services = () => {
       img: "images/logo-tp.svg",
       desc: "Assina nossa newlleter mesal, e segue nas nossas redes, um local com dicas para todos os gosto.",
       url: "https://tipsbook.info",
+      website: true
     },
     {
       img: "images/logo-drives.svg",
       desc: "Site com milhares de drives, local perfeito para pesquisas",
       url: "https://drives.directory",
+      website: true
     },
     {
       img: "images/logo-devicescodes.svg",
       desc: "local com códigos para seu projeto open-source.",
       url: "https://devices.codes",
+      website: true
     },
     {
       img: "images/logo-consult.svg",
       desc: "Consultoria para sua empresa, com melhor equipe para criar projeto de software educacional",
+      url: null,
+    },
+    {
+      img: "images/logo-servicesemail.svg",
+      desc: "oferecemos serviços configuramos e-mail cooporativo",
       url: null,
     },
   ];
@@ -59,10 +67,12 @@ const Services = () => {
         <Row>
           {services.map((service, key) => (
             <Col key={key} lg={4} md={6}>
-              {service.url ? (
-                <BtnCard href={service.url}><Card service={service}/></BtnCard>
+              {service.url && service.website ? (
+               <BtnCard href={service.url}> <Title>Nosso Website</Title><Card service={service}/></BtnCard>
               ) : (
-                <Content><Card service={service}/></Content>
+                <Content>
+                  <Title>Serviços Empresariais</Title>
+                  <Card service={service}/></Content>
               )}
             </Col>
           ))}
