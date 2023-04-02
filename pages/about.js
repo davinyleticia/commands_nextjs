@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <Layout pageTitle="AfuLink Certificação e Treinamentos">
+    <Layout pageTitle="AfuLink Tecnologia">
       <Header url={'.'}/>
       <About />
       <Footer />

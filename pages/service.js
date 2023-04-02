@@ -5,7 +5,7 @@ import Services from "../components/services/services";
 
 const Index = () => {
   return (
-    <Layout pageTitle="AfuLink Certificação e Treinamentos">
+    <Layout pageTitle="AfuLink Tecnologia">
       <Header url={'.'}/>
       <Services />
       <Footer />

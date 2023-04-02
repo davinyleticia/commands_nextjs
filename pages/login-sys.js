@@ -7,7 +7,7 @@ import Login from "../components/login/login";
 
 const Index = () => {
   return (
-    <Layout pageTitle="AfuLink Certificação e Treinamentos">
+    <Layout pageTitle="AfuLink Tecnologia">
       <Header url={'..'} />
       <Login />
       <Footer />
