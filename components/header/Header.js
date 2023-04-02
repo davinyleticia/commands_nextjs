@@ -28,7 +28,7 @@ const Header = ({url}) => {
   };
 
   return (
-    <div className={`header${sticky ? " sticky" : ""}`}>
+    <div className={`header${sticky ? "sticky" : ""}`}>
       <Navbar light expand="md">
         <Container>
           <NavbarHeader href="/">
@@ -41,14 +41,17 @@ const Header = ({url}) => {
               <NavItem>
                 <NavLink href="/">Home</NavLink>
               </NavItem>
+              {/* <NavItem>
+                <NavLink href="/certificado">Certificação / Cursos</NavLink>
+              </NavItem> */}
               <NavItem>
-                <NavLink href="/certificado">Certificação</NavLink>
+                <NavLink href={"service"}>Nosso Serviços</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href={`${url}/#service`}>Cursos</NavLink>
+                <NavLink href="/about">Sobre</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href={`${url}/#about`}>Sobre</NavLink>
+                <NavLink href="/login-sys">Login</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

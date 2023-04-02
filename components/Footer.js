@@ -63,7 +63,8 @@ const Footer = () => {
         <Row className="mt-5">
           <Col md={12}>
             <div className="text-center text-muted">
-              <p className="mb-0 f-15">2022 © Afulink. Todos direitos reservado, logomarca e o nome é protegido por direito de patente</p>
+              <p className="mb-0 f-15">2022 - 2023 © Afulink. Todos direitos reservado, logomarca e o nome é protegido por direito de patente</p>
+              <p className="mb-0 f-15">CNPJ 41.423.786/0001-37</p>
             </div>
           </Col>
         </Row>

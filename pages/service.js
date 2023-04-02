@@ -1,15 +1,13 @@
 import Layout from "../components/Layout";
 import Header from "../components/header/Header";
-import Certificacao from '../components/certificacao/Certificacao';
 import Footer from '../components/Footer';
-import Curso from "../components/curso/Curso";
+import Services from "../components/services/services";
 
 const Index = () => {
   return (
     <Layout pageTitle="AfuLink Certificação e Treinamentos">
-      <Header url={'..'} />
-      <Curso />
-      <Certificacao />
+      <Header url={'.'}/>
+      <Services />
       <Footer />
     </Layout>
   )
