@@ -6,7 +6,7 @@ import Curso from "../components/curso/Curso";
 
 const Index = () => {
   return (
-    <Layout pageTitle="AfuLink Tecnologia">
+    <Layout pageTitle="Afulink Informática">
       <Header url={'..'} />
       <Curso />
       <Certificacao />
