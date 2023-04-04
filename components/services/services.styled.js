@@ -3,29 +3,27 @@ import styled from "styled-components";
 export const BtnCard = styled.a`
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
-  padding: 0.5rem;
-  text-decoration: none;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   &:hover {
     text-decoration: none;
     border: 1px solid #528854;
   }
 `;
 
-export const Content = styled.div`
+export const Card = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
-  padding: 0.5rem;
-  text-decoration: none;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   &:hover {
     text-decoration: none;
     border: 1px solid #528854;
@@ -51,4 +49,16 @@ export const Description = styled.p`
 export const Img = styled.img`
   width: 120px;
   height: 120px;
+`;
+export const Content = styled.div`
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  grid-row-gap: 1rem;
+  margin: 2rem 0px;
+  width: 100%;
+`;
+
+export const List = styled.div`
+  margin: 0;
 `;
