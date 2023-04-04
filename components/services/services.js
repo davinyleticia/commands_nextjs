@@ -32,13 +32,13 @@ const Services = () => {
     },
     {
       img: "images/logo-servicesemail.svg",
-      desc: "oferecemos serviços configuramos e-mail cooporativo",
+      desc: "oferecemos serviços de configuração de e-mail cooporativo",
       url: null,
       website: false,
     },
     {
       img: "images/logo-cloud.svg",
-      desc: "oferecemos serviços configuramos e-mail cooporativo",
+      desc: "oferecemos serviços de hospedagem em cloud",
       url: null,
       website: false,
     },

@@ -45,7 +45,7 @@ const Header = ({url}) => {
                 <NavLink href="/certificado">Certificação / Cursos</NavLink>
               </NavItem> */}
               <NavItem>
-                <NavLink href={"service"}>Nosso Serviços</NavLink>
+                <NavLink href={"services"}>Nosso Serviços</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/about">Sobre</NavLink>
