@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BtnCard = styled.a`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border: 1px solid transparent;
   border-radius: 0.5rem;
@@ -18,7 +18,7 @@ export const BtnCard = styled.a`
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border: 1px solid transparent;
   border-radius: 0.5rem;
@@ -50,14 +50,11 @@ export const Img = styled.img`
   width: 120px;
   height: 120px;
 `;
-export const Content = styled.div`
-
-`;
+export const Content = styled.div``;
 
 export const List = styled.div`
-    display: grid;
+  display: grid;
   grid-template-columns: 30% 30% 30%;
-  justify-content: center;
   grid-row-gap: 1rem;
   margin: 2rem 0px;
   width: 100%;
