@@ -51,14 +51,14 @@ export const Img = styled.img`
   height: 120px;
 `;
 export const Content = styled.div`
-  display: grid;
+
+`;
+
+export const List = styled.div`
+    display: grid;
   grid-template-columns: 50% 50%;
   justify-content: center;
   grid-row-gap: 1rem;
   margin: 2rem 0px;
   width: 100%;
-`;
-
-export const List = styled.div`
-  margin: 0;
 `;
