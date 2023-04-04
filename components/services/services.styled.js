@@ -56,7 +56,7 @@ export const Content = styled.div`
 
 export const List = styled.div`
     display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 30% 30% 30%;
   justify-content: center;
   grid-row-gap: 1rem;
   margin: 2rem 0px;

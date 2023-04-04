@@ -36,6 +36,12 @@ const Services = () => {
       url: null,
       website: false,
     },
+    {
+      img: "images/logo-cloud.svg",
+      desc: "oferecemos serviços configuramos e-mail cooporativo",
+      url: null,
+      website: false,
+    },
   ];
 
   const RenderCard = ({ service }) => {
