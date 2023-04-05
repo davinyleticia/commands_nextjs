@@ -1,16 +1,50 @@
-import Layout from "../components/Layout";
-import Header from "../components/header/Header";
-import About from '../components/About';
-import Footer from '../components/Footer';
+import Layout from "../views/afulink/Layout";
+import AboutAfuLink from "../views/afulink/About";
+import AboutTipsBook from "../views/tipsbook/About";
+import Footer from "../views/afulink/Footer";
+import HeaderAfulik from "../views/afulink/header/Header";
+import HeaderTipsBook from "../views/tipsbook/header/Header";
 
-const Index = () => {
+const is_render = (url, options) => {
+  let result;
+
+  result = options && url;
+  result = options && url;
+  result = options && url;
+  result = options === url;
+
+  return result;
+};
+
+const About = (host) => {
+  console.log(host);
+
   return (
-    <Layout pageTitle="Afulink Informática">
-      <Header url={'.'}/>
-      <About />
-      <Footer />
-    </Layout>
-  )
+    <>
+      {is_render(host.host, "afu.link") && (
+        <Layout pageTitle="Afulink Informática">
+          <HeaderAfulik url={"."} />
+          <AboutAfuLink />
+          <Footer />
+        </Layout>
+      )}
+
+      {is_render(host.host, "tips.book") && (
+        <Layout pageTitle="Afulink Informática">
+          <HeaderTipsBook url={"."} />
+          <AboutTipsBook />
+          <Footer />
+        </Layout>
+      )}
+    </>
+  );
+};
+
+export async function getServerSideProps(context) {
+  const host = context.req.headers.host;
+  return {
+    props: { host }, // will be passed to the page component as props
+  };
 }
 
-export default Index;
+export default About;

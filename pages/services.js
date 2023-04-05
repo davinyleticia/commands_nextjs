@@ -1,7 +1,7 @@
-import Layout from "../components/Layout";
-import Header from "../components/header/Header";
-import Footer from '../components/Footer';
-import Services from "../components/services/services";
+import Layout from "../views/afulink/Layout";
+import Header from "../views/afulink/header/Header";
+import Services from "../views/afulink/Hero";
+import Footer from "../views/afulink/Footer";
 
 const Index = () => {
   return (
