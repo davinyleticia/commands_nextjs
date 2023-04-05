@@ -29,7 +29,7 @@ const About = (host) => {
         </Layout>
       )}
 
-      {is_render(host.host, "tips.book") && (
+      {is_render(host.host, "tipsbook.info") && (
         <Layout pageTitle="Afulink Informática">
           <HeaderTipsBook url={"."} />
           <AboutTipsBook />
