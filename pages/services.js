@@ -1,6 +1,6 @@
 import Layout from "../views/afulink/Layout";
 import Header from "../views/afulink/header/Header";
-import Services from "../views/afulink/Hero";
+import Services from "../views/afulink/services/services";
 import Footer from "../views/afulink/Footer";
 
 const Index = () => {
