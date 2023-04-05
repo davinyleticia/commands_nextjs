@@ -8,9 +8,8 @@ import {
   NavLink,
   Container,
 } from "reactstrap";
-import { NavbarHeader, Image } from "./header.styled";
 
-const Header = ({ url }) => {
+const Header = () => {
   return (
     <div className={`header${sticky ? "sticky" : ""}`}>
       <Navbar light expand="md">
