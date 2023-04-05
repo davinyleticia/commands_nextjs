@@ -15,7 +15,7 @@ const Services = () => {
     {
       img: "images/logo-tp.svg",
       desc: "Assina nossa newlleter mesal, e segue nas nossas redes, um local com dicas para todos os gosto.",
-      url: "https://tipsbook.info",
+      url: "https://tipsbook.info/home",
       website: true,
     },
     {
