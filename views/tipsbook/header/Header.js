@@ -9,7 +9,7 @@ import {
 
 const Header = () => {
   return (
-    <div className={`header${sticky ? "sticky" : ""}`}>
+    <div>
       <Navbar light expand="md">
         <Container>
           <Nav className="m-auto" navbar>
