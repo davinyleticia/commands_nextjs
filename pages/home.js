@@ -30,7 +30,7 @@ const Index = (host) => {
       )}
 
       {is_render(host.host, "tipsbook.info") && (
-        <Layout pageTitle="Afulink Informática">
+        <Layout pageTitle="TipsBook">
           <HeaderTipsBook url={"."} />
           <HomeTipsBook />
           <Footer />
