@@ -3,8 +3,9 @@ import Header from "../views/afulink/header/Header";
 import Curso from "../views/afulink/Hero";
 import Footer from "../views/afulink/Footer";
 import Hero from "../views/afulink/Hero";
+import About from "../views/afulink/About";
 
-const Index = () => {
+const Exemplo = () => {
   return (
     <Layout pageTitle="Afulink Informática">
       <Header url={'.'}/>
@@ -16,4 +17,4 @@ const Index = () => {
   )
 }
 
-export default Index;
+export default Exemplo;
