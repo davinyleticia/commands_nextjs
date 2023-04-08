@@ -51,7 +51,7 @@ const Header = ({url}) => {
                 <NavLink href="/about">Sobre</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/login-sys">Login</NavLink>
+                <NavLink href="https://admin.views.page">Login</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
