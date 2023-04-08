@@ -19,9 +19,9 @@ const Services = () => {
       website: true,
     },
     {
-      img: "images/logo-devicescodes.svg",
-      desc: "local com códigos para seu projeto open-source.",
-      url: "https://studies.codes",
+      img: "images/logo-viewspage.svg",
+      desc: "biolink e redirect para sua empresa com proteção de senha para cada usuário.",
+      url: "https://views.page",
       website: true,
     },
     {
