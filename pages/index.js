@@ -48,7 +48,7 @@ const Index = (host) => {
       )}
       {is_render(host.host, "localhost:3000") && (
         <Layout pageTitle="Commad">
-          <HeaderCommad/>
+          <HeaderCommand/>
           <HomeCommad/>
         </Layout>
       )}
