@@ -7,7 +7,6 @@ const Footer = () => {
       child : [
           { title : "Linkedin", link : "https://www.linkedin.com/company/afulink/" },
           { title : "Instagram", link : "https://www.instagram.com/afulink/" },
-          { title : "Twiter", link : "https://twiter.com/afulink/" },
           { title : "Youtube", link : "/" }
       ]
     },
