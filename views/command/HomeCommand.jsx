@@ -24,6 +24,7 @@ export default function HomeCommad() {
 
     function getAPI() {
       fetch("https://command.views.page/api/command")
+    // fetch("https://api.github.com/users/davinyvidal/repos")
         .then(async (res) => {
           if (!res.ok) {
             throw new Error(res.status);

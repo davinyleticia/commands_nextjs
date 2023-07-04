@@ -7,13 +7,16 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 2rem 0;
   background-color: #1e2028;
+  margin: 0 auto;
+
 `;
 
 export const Content = styled.div`
-  height: 100%;
+
   display: flex;
   padding: 20px;
   flex-direction: column;
+    max-width: 80%rem;
 
   @media (max-width: 600px) {
     padding: 5px;
