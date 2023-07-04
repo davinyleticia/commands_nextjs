@@ -47,10 +47,11 @@ const Index = (host) => {
         </Layout>
       )}
       {is_render(host.host, "localhost:3000") && (
-        <Layout pageTitle="Commad">
-          <HeaderCommand/>
-          <HomeCommad/>
-        </Layout>
+        <Layout pageTitle="Afulink Informática">
+        <HeaderAfulik url={"."} />
+        <Hero />
+        <Footer />
+      </Layout>
       )}
     </>
   );

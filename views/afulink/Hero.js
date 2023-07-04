@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import Parceria from './parceria/Parceria';
 
 const Hero = () => {
   return (
-    <section className="section position-relative">
       <Container>
         <Row className="align-items-center">
           <Col lg={6}>
@@ -23,8 +23,9 @@ const Hero = () => {
             </div>
           </Col>
         </Row>
+        <hr></hr>
+        <Parceria/>
       </Container>
-    </section>
   );
 }
 

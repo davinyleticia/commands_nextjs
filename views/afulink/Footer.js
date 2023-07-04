@@ -19,8 +19,8 @@ const Footer = () => {
   ];
   
   return (
-    <section className="footer section">
       <Container>
+        <hr></hr>
         <Row>
           <Col lg={4}>
               <div className="mb-4">
@@ -58,7 +58,7 @@ const Footer = () => {
           </Col>
         </Row>
 
-        <Row className="mt-5">
+        <Row className="mt-2">
           <Col md={12}>
             <div className="text-center text-muted">
               <p className="mb-0 f-15">2020 - 2023 © Afulink Informática. Todos direitos reservado, logomarca e o nome é protegido por direito de patente</p>
@@ -66,8 +66,8 @@ const Footer = () => {
             </div>
           </Col>
         </Row>
+        <hr></hr>
       </Container>
-    </section>
   );
 }
 
