@@ -5,7 +5,6 @@ import Footer from "../views/afulink/Footer";
 import HomeTipsBook from "../views/tipsbook/HomeTipsBook/HomeTipsBook";
 import HeaderTipsBook from "../views/tipsbook/header/Header";
 import HomeCommad from "../views/command/HomeCommand";
-import HeaderCommad from "../views/command/partials/Header/HeaderCommand";
 
 const is_render = (url, options) => {
   let result;

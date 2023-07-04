@@ -1,8 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import Alert from '../../components/Alert/Alert';
 import LogoIco from '../../components/Ico/Logo';
-import MenuIco from '../../components/Ico/Menu';
-import Notifications from '../../components/Notifications/Notifications';
+
 
 import {
   Container,
