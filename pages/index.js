@@ -5,6 +5,7 @@ import Footer from "../views/afulink/Footer";
 import HomeTipsBook from "../views/tipsbook/HomeTipsBook/HomeTipsBook";
 import HeaderTipsBook from "../views/tipsbook/header/Header";
 import HomeCommad from "../views/command/HomeCommand";
+import HeaderCommand from "../views/command/partials/Header/HeaderCommand";
 
 const is_render = (url, options) => {
   let result;
@@ -41,15 +42,14 @@ const Index = (host) => {
 
       {is_render(host.host, "command.views.page") && (
         <Layout pageTitle="Commad">
-          <HeaderCommad/>
+          <HeaderCommand/>
           <HomeCommad/>
         </Layout>
       )}
       {is_render(host.host, "localhost:3000") && (
-        <Layout pageTitle="Afulink Informática">
-          <HeaderAfulik url={"."} />
-          <Hero />
-          <Footer />
+        <Layout pageTitle="Commad">
+          <HeaderCommad/>
+          <HomeCommad/>
         </Layout>
       )}
     </>
