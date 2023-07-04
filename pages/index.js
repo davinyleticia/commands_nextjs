@@ -12,6 +12,7 @@ const is_render = (url, options) => {
   result = options && url;
   result = options && url;
   result = options && url;
+  result = options && url;
   result = options === url;
 
   return result;
