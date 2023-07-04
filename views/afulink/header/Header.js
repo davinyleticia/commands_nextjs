@@ -39,17 +39,17 @@ const Header = ({url}) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="m-auto" navbar>
               <NavItem>
-                <NavLink href="/home">Home</NavLink>
+                <NavLink href="/">Home</NavLink>
               </NavItem>
               {/* <NavItem>
                 <NavLink href="/certificado">Certificação / Cursos</NavLink>
               </NavItem> */}
-              <NavItem>
+              {/* <NavItem>
                 <NavLink href={"services"}>Nosso Serviços</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/about">Sobre</NavLink>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLink href="/login-sys">Login</NavLink>
               </NavItem>

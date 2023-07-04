@@ -5,15 +5,14 @@ const Footer = () => {
   const links = [
     { id : 1, title : "Feature",
       child : [
-          { title : "Linkedin", link : "/" },
-          { title : "Instagram", link : "/" },
-          { title : "Twiter", link : "/" },
+          { title : "Linkedin", link : "https://www.linkedin.com/company/afulink/" },
+          { title : "Instagram", link : "https://www.instagram.com/afulink/" },
+          { title : "Twiter", link : "https://www.twiter.com/afulink/" },
           { title : "Youtube", link : "/" }
       ]
     },
     { id : 2, title : "About Us",
       child : [
-          { title : "Contacte nos", link : "/" },
           { title : "FAQs", link : "/" },
           { title : "Politica de Privacidade", link : "/" },
       ]
@@ -27,7 +26,7 @@ const Footer = () => {
           <Col lg={4}>
               <div className="mb-4">
                 <p className="text-muted mt-4 mb-2">Contato:</p>
-                <h6 className="text-muted font-weight-normal">contato@afu.link</h6>
+                <h6 className="text-muted font-weight-normal">team@afu.link</h6>
               </div>
           </Col>
           <Col lg={8}>
@@ -63,8 +62,8 @@ const Footer = () => {
         <Row className="mt-5">
           <Col md={12}>
             <div className="text-center text-muted">
-              <p className="mb-0 f-15">2022 - 2023 © Afulink. Todos direitos reservado, logomarca e o nome é protegido por direito de patente</p>
-              <p className="mb-0 f-15">CNPJ 41.423.786/0001-37</p>
+              <p className="mb-0 f-15">2020 - 2023 © Afulink Informática. Todos direitos reservado, logomarca e o nome é protegido por direito de patente</p>
+
             </div>
           </Col>
         </Row>
