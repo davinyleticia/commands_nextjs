@@ -7,13 +7,12 @@ const Footer = () => {
       child : [
           { title : "Linkedin", link : "https://www.linkedin.com/company/afulink/" },
           { title : "Instagram", link : "https://www.instagram.com/afulink/" },
-          { title : "Twiter", link : "https://www.twiter.com/afulink/" },
+          { title : "Twiter", link : "https://twiter.com/afulink/" },
           { title : "Youtube", link : "/" }
       ]
     },
-    { id : 2, title : "docs",
+    { id : 2, title : "Docs",
       child : [
-          { title : "FAQs", link : "/" },
           { title : "Politica de Privacidade", link : "/" },
       ]
     },
