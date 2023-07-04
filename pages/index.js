@@ -41,7 +41,7 @@ const Index = (host) => {
       )}
 
       {is_render(host.host, "command.views.page") && (
-        <Layout pageTitle="Commad">
+        <Layout pageTitle="Commad Find">
           <HeaderCommand/>
           <HomeCommad/>
         </Layout>

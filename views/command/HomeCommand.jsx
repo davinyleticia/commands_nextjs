@@ -52,7 +52,6 @@ export default function HomeCommad() {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = itemsApi
     .slice()
-    .sort((a, b) => new Date(b.mes) - new Date(a.mes))
     .slice(indexOfFirstItem, indexOfLastItem);
 
   const [tagSearch, setTagSearch] = useState("");
@@ -73,7 +72,7 @@ export default function HomeCommad() {
     <Container>
       <Content>
         <Description>
-          Tag Disponível:{" "}
+          Tag Disponíveis:{" "}
           <LinkTag onClick={() => setTagSearch("#BashBasico")}>
             #BashBasico
           </LinkTag>{" "}
