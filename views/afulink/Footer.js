@@ -3,7 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 
 const Footer = () => {
   const links = [
-    { id : 1, title : "Feature",
+    { id : 1, title : "Rede Social",
       child : [
           { title : "Linkedin", link : "https://www.linkedin.com/company/afulink/" },
           { title : "Instagram", link : "https://www.instagram.com/afulink/" },
