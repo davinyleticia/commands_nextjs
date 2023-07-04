@@ -23,8 +23,8 @@ export default function HomeCommad() {
     let abortController = new AbortController();
 
     function getAPI() {
-      fetch("https://command.views.page/api/command")
-    // fetch("https://api.github.com/users/davinyvidal/repos")
+    //   fetch("https://command.views.page/api/command")
+    fetch("https://api.github.com/users/davinyvidal/repos")
         .then(async (res) => {
           if (!res.ok) {
             throw new Error(res.status);

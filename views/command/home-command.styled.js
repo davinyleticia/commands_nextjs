@@ -9,6 +9,7 @@ export const Container = styled.div`
   background-color: #1e2028;
   margin: 0 auto;
 
+
 `;
 
 export const Content = styled.div`
@@ -29,7 +30,6 @@ export const Ul = styled.ul`
   -webkit-box-pack: center;
   justify-content: center;
   margin: 2rem 0px;
-  height: inherit;
 
   &::-webkit-scrollbar {
     width: 12px;
