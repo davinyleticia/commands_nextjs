@@ -2,8 +2,6 @@ import Layout from "../views/afulink/Layout";
 import HeaderAfulik from "../views/afulink/header/Header";
 import Hero from "../views/afulink/Hero";
 import Footer from "../views/afulink/Footer";
-import HomeTipsBook from "../views/tipsbook/HomeTipsBook/HomeTipsBook";
-import HeaderTipsBook from "../views/tipsbook/header/Header";
 import HomeCommad from "../views/command/HomeCommand";
 import HeaderCommand from "../views/command/partials/Header/HeaderCommand";
 
@@ -33,16 +31,16 @@ const Index = (host) => {
       )}
       {is_render(host.host, "command.views.page") && (
         <Layout pageTitle="Commad Find">
-          <HeaderCommand/>
-          <HomeCommad/>
+          <HeaderCommand />
+          <HomeCommad />
         </Layout>
       )}
       {is_render(host.host, "localhost:3000") && (
         <Layout pageTitle="Afulink Informática">
-        <HeaderAfulik url={"."} />
-        <Hero />
-        <Footer />
-      </Layout>
+          <HeaderAfulik url={"."} />
+          <Hero />
+          <Footer />
+        </Layout>
       )}
     </>
   );
