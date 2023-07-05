@@ -1,6 +1,5 @@
 import Layout from "../views/afulink/Layout";
 import AboutAfuLink from "../views/afulink/About";
-import AboutTipsBook from "../views/tipsbook/About";
 import Footer from "../views/afulink/Footer";
 import HeaderAfulik from "../views/afulink/header/Header";
 import HeaderTipsBook from "../views/tipsbook/header/Header";
