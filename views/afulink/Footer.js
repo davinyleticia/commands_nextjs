@@ -59,7 +59,7 @@ const Footer = () => {
         <Row className="mt-2">
           <Col md={12}>
             <div className="text-center text-muted">
-              <p className="mb-0 f-15">2020 - 2023 © Afulink Informática. Todos direitos reservado, logomarca e o nome é protegido por direito de patente</p>
+              <p className="mb-0 f-15">© Afulink Informática. Todos direitos reservado, logomarca e o nome é protegido por direito de patente</p>
 
             </div>
           </Col>

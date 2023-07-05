@@ -31,15 +31,6 @@ const Index = (host) => {
           <Footer />
         </Layout>
       )}
-
-      {is_render(host.host, "tipsbook.info") && (
-        <Layout pageTitle="TipsBook">
-          <HeaderTipsBook url={"."} />
-          <HomeTipsBook />
-          <Footer />
-        </Layout>
-      )}
-
       {is_render(host.host, "command.views.page") && (
         <Layout pageTitle="Commad Find">
           <HeaderCommand/>
