@@ -13,6 +13,9 @@ export const Content = styled.div`
   justify-content: center;
   margin: 3rem 0;
   align-items: center;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
   img {
     margin: 0 1rem;
   }

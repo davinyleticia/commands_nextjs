@@ -18,8 +18,6 @@ function Parceria() {
           src="https://media.licdn.com/dms/image/C4E0BAQEuf72oTAIzDw/company-logo_200_200/0/1619578202545?e=1696464000&v=beta&t=xOEh7QVQt3MWrFwRMOKa8mgDAZCzQcbjtKlivSrjBLk"
         />
         <TodasLetrasIco />
-      </Content>
-      <Content>
         <ReprogramaIco />
         <img
           width={110}
