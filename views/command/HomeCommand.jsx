@@ -16,7 +16,7 @@ import {
 
 export default function HomeCommad() {
   const [itemsApi, setItemsApi] = useState([]);
-
+  const [tagSearch, setTagSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function HomeCommad() {
 
     function getAPI() {
     //   fetch("https://command.views.page/api/command")
-    fetch(`https://command.views.page/api/${currentPage}`)
+    fetch(`https://command.views.page/api/${tagSearch}`)
         .then(async (res) => {
           if (!res.ok) {
             throw new Error(res.status);
@@ -54,8 +54,6 @@ export default function HomeCommad() {
   const currentItems = itemsApi
     .slice()
     .slice(indexOfFirstItem, indexOfLastItem);
-
-  const [tagSearch, setTagSearch] = useState("");
 
   useEffect(() => {
     let value;
