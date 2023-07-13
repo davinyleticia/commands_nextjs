@@ -31,7 +31,7 @@ function Policy() {
         <p><span>Esta política é efetiva a partir de&nbsp;10 July 2023 20:17</span></p>
      
     </Container>
-  )
-};
+    );
+}
 
 export default Policy;
