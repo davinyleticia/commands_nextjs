@@ -60,7 +60,7 @@ export default function HomeCommad() {
   useEffect(() => {
     let value;
     // Get the value from local storage if it exists
-    value = localStorage.getItem("tag_search") || "#Git";
+    value = localStorage.getItem("tag_search") || "git";
     setTagSearch(value);
   }, []);
 
@@ -74,10 +74,10 @@ export default function HomeCommad() {
       <Content>
         <Description>
           Tag Disponíveis:{" "}
-          <LinkTag onClick={() => setTagSearch("#BashBasico")}>
+          <LinkTag onClick={() => setTagSearch("bashBasico")}>
             #BashBasico
-          </LinkTag>{" "}
-          <LinkTag onClick={() => setTagSearch("#Git")}>#Git</LinkTag>
+          </LinkTag>{""}
+          <LinkTag onClick={() => setTagSearch("git")}>#Git</LinkTag>
         </Description>
 
         <SearchTitle>Resultado: {tagSearch} </SearchTitle>
