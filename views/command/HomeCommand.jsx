@@ -24,7 +24,7 @@ export default function HomeCommad() {
 
     function getAPI() {
     //   fetch("https://command.views.page/api/command")
-    fetch(`https://command.views.page/api/${tagSearch}`)
+    fetch(`https://command.views.page/api/${tagSearch || 'git'} `)
         .then(async (res) => {
           if (!res.ok) {
             throw new Error(res.status);
