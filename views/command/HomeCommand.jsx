@@ -24,7 +24,7 @@ export default function HomeCommad() {
 
     function getAPI() {
     //   fetch("https://command.views.page/api/command")
-    fetch("https://api.github.com/users/davinyvidal/repos")
+    fetch(`https://command.views.page/api/${currentPage}`)
         .then(async (res) => {
           if (!res.ok) {
             throw new Error(res.status);
@@ -40,7 +40,7 @@ export default function HomeCommad() {
     return () => abortController.abort();
   }, []);
 
-  const itemsPerPage = 5;
+  const itemsPerPage = 9;
   const totalPages = Math.ceil(
     itemsApi.slice().sort((a, b) => new Date(b.mes) - new Date(a.mes)).length /
       itemsPerPage

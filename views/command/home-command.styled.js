@@ -59,13 +59,12 @@ export const Li = styled.li`
   }
 `;
 
-export const TitleProject = styled.strong``;
+export const TitleProject = styled.strong`  max-width: 10rem;`;
 
 export const Url = styled.a`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
   background: transparent;
   border: none;
   text-decoration: none;
@@ -73,6 +72,7 @@ export const Url = styled.a`
   color: #fff;
   cursor: pointer;
   padding: 0 0.5rem;
+  min-width: 30rem;
 
   &:hover {
     color: #fff;
@@ -82,6 +82,7 @@ export const Url = styled.a`
 export const Text = styled.p`
   text-align: start;
   margin: 0.5rem 0;
+  max-width: 17rem;
 `;
 
 export const Dot = styled.div`
@@ -103,6 +104,7 @@ export const Description = styled.strong`
   color: #fff;
   size: 20px;
   padding: 1rem;
+  max-width: 26rem;
 `;
 
 export const ProjectContent = styled.div`
