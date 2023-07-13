@@ -17,7 +17,8 @@ export const Content = styled.div`
   display: flex;
   padding: 20px;
   flex-direction: column;
-    max-width: 80%rem;
+    max-width: 80%;
+    min-height: 78vh;
 
   @media (max-width: 600px) {
     padding: 5px;
@@ -27,20 +28,7 @@ export const Content = styled.div`
 export const Ul = styled.ul`
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  -webkit-box-pack: center;
-  justify-content: center;
   margin: 2rem 0px;
-
-  &::-webkit-scrollbar {
-    width: 12px;
-    border-radius: 10px;
-    background-color: whitesmoke;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: darkgray;
-  }
 
   @media (max-width: 760px) {
     display: flex;

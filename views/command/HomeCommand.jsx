@@ -40,7 +40,7 @@ export default function HomeCommad() {
     return () => abortController.abort();
   }, []);
 
-  const itemsPerPage = 9;
+  const itemsPerPage = 5;
   const totalPages = Math.ceil(
     itemsApi.slice().sort((a, b) => new Date(b.mes) - new Date(a.mes)).length /
       itemsPerPage
@@ -77,7 +77,7 @@ export default function HomeCommad() {
           <LinkTag onClick={() => setTagSearch("#BashBasico")}>
             #BashBasico
           </LinkTag>{" "}
-          <LinkTag onClick={() => setTagSearch("#Git")}>#Git</LinkTag>{" "}
+          <LinkTag onClick={() => setTagSearch("#Git")}>#Git</LinkTag>
         </Description>
 
         <SearchTitle>Resultado: {tagSearch} </SearchTitle>
