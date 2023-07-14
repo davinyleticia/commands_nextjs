@@ -84,7 +84,7 @@ export default function HomeCommad() {
             <Li key={item.id}>
               <Url>
                 <TitleProject>
-                  {item.name.toUpperCase().replace(/\.|\-/g, " ")}
+                  {item.name.replace(/\.|\-/g, " ")}
                 </TitleProject>
                 <Text>{item.description || "Sem descrição"}</Text>
                 <Text>
