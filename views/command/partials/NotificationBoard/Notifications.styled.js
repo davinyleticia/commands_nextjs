@@ -16,6 +16,5 @@ export const Cads = styled.div`
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
-    margin: 1rem !important;
   }
 `;
