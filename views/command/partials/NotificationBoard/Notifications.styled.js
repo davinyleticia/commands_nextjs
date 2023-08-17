@@ -8,7 +8,7 @@ export const Cads = styled.div`
   margin: 2rem 0px;
   gap: 1rem;
 
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
     margin: 1rem !important;

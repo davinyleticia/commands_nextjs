@@ -6,21 +6,18 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   padding: 2rem 0;
-  background-color: #1e2028;
+  background-color: #fff;
   margin: 0 auto;
-
-
 `;
 
 export const Content = styled.div`
-
   display: flex;
   padding: 20px;
   flex-direction: column;
-    max-width: 80%;
-    min-height: 78vh;
+  width: 80%;
+  min-height: 78vh;
 
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     padding: 5px;
   }
 `;
@@ -30,9 +27,15 @@ export const Ul = styled.ul`
   grid-template-columns: 30% 30% 30%;
   margin: 2rem 0px;
 
-  @media (max-width: 760px) {
+  @media screen and (max-width: 1341px) {
+    grid-template-columns: 50% 50%;
+  }
+
+
+  @media screen and (max-width: 887px) {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 `;
 
@@ -49,7 +52,7 @@ export const Li = styled.li`
   padding: 10px;
 
   &:hover {
-    background: #1e211a;
+    background: #ffa;
     opacity: 0.8;
   }
 
@@ -59,7 +62,9 @@ export const Li = styled.li`
   }
 `;
 
-export const TitleProject = styled.strong`  max-width: 10rem;`;
+export const TitleProject = styled.strong`
+  max-width: 10rem;
+`;
 
 export const Url = styled.a`
   display: flex;
@@ -69,13 +74,12 @@ export const Url = styled.a`
   border: none;
   text-decoration: none;
   gap: 1rem;
-  color: #fff;
+  color: #000;
   cursor: pointer;
   padding: 0 0.5rem;
-  min-width: 30rem;
 
   &:hover {
-    color: #fff;
+    color: #001;
   }
 `;
 
@@ -101,7 +105,7 @@ export const Description = styled.strong`
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
-  color: #fff;
+  color: #000;
   size: 20px;
   padding: 1rem;
   max-width: 26rem;
@@ -117,7 +121,7 @@ export const Hr = styled.hr`
 
 export const SearchTitle = styled.p`
   text-align: start;
-  color: #ffaa;
+  color: #000;
   size: 10px;
   padding: 1rem;
 `;
@@ -127,6 +131,6 @@ export const LinkTag = styled.a`
   padding: 0 0.5rem;
 
   &:hover {
-    color: #007bff;
+    color: #000;
   }
 `;

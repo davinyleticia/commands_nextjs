@@ -9,8 +9,8 @@ const Pagination = ({ totalPages, handleClick, currentPage }) => {
           currentPage === 1 ? null : handleClick(currentPage - 1)
         }
         style={{
-          color: 'rgba(240, 239, 245, 0.87)',
-          background: 'rgba(104, 104, 197, 0.539)',
+          color: 'rgba(0, 0, 0, 0.87)',
+          background: 'rgba(255, 255, 255, 0.539)',
           borderRadius: '50%',
         }}
       >
@@ -25,9 +25,9 @@ const Pagination = ({ totalPages, handleClick, currentPage }) => {
             fontWeight: currentPage === index + 1 ? 'bold' : 'normal',
             color:
               currentPage === index + 1
-                ? ' rgba(255, 255, 255, 0.87)'
+                ? 'rgba(0, 0, 0, 0.87)'
                 : 'rgba(177, 175, 175, 0.98)',
-            background: currentPage === index + 1 ? 'rgba(104, 104, 197, 0.539)' : '',
+            background: currentPage === index + 1 ? 'rgba(255, 255, 255, 0.539)' : '',
             borderRadius: '50%',
           }}
         >
@@ -39,8 +39,8 @@ const Pagination = ({ totalPages, handleClick, currentPage }) => {
           currentPage === totalPages ? null : handleClick(currentPage + 1)
         }
         style={{
-          color: 'rgba(240, 239, 245, 0.87)',
-          background: 'rgba(104, 104, 197, 0.539)',
+          color: 'rgba(0, 0, 0, 0.87)',
+          background: 'rgba(255, 255, 255, 0.539)',
           borderRadius: '50%',
         }}
       >
