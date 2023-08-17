@@ -9,7 +9,6 @@ export const Container = styled.div`
   background: rgba(255, 251, 212, 0.827);
   border-radius: 0 0 0 40px;
   padding: 1rem;
-  width: 30rem;
   margin-top: 5.9rem;
 `;
 
