@@ -77,5 +77,12 @@ export default function handler(req, res) {
       language: "bashBasico",
       link: "https://run.dnys.dev",
     },
+    {
+      id: 12,
+      name: "clear",
+      description: "Limpar a tela do terminal virtual corrente.",
+      language: "bashBasico",
+      link: "https://run.dnys.dev",
+    },
 ]);
 }

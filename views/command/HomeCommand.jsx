@@ -12,6 +12,7 @@ import {
   Description,
   SearchTitle,
   LinkTag,
+  Footer,
 } from "./home-command.styled";
 
 export default function HomeCommad() {
@@ -58,7 +59,7 @@ export default function HomeCommad() {
   useEffect(() => {
     let value;
     // Get the value from local storage if it exists
-    value = localStorage.getItem("tag_search") || "git";
+    value = localStorage.getItem("tag_search") || "bashBasico";
     setTagSearch(value);
   }, []);
 
@@ -84,7 +85,7 @@ export default function HomeCommad() {
             <Li key={item.id}>
               <Url>
                 <TitleProject>
-                  {item.name.replace(/\.|\-/g, " ")}
+                  {item.name}
                 </TitleProject>
                 <Text>{item.description || "Sem descrição"}</Text>
                 <Text>
@@ -101,6 +102,9 @@ export default function HomeCommad() {
         handleClick={handleClick}
         currentPage={currentPage}
       />
+      <Footer>
+        Todos direitos reservados - <a href="mailto://team@afu.link">Feedback</a> - By Afu.link - feito com ❤️ São Paulo - Brasil
+      </Footer>
     </Container>
   );
 }

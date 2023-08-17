@@ -75,11 +75,12 @@ export const Url = styled.a`
   text-decoration: none;
   gap: 1rem;
   color: #000;
-  cursor: pointer;
+  /* cursor: pointer; */
   padding: 0 0.5rem;
 
   &:hover {
     color: #001;
+    text-decoration: none
   }
 `;
 
@@ -133,4 +134,9 @@ export const LinkTag = styled.a`
   &:hover {
     color: #000;
   }
+`;
+
+
+export const Footer = styled.div`
+
 `;
