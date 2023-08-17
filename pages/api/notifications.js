@@ -4,7 +4,7 @@ export default function handler(req, res) {
         id: 1,
         title: "Lançamento",
         date: '01/06/2023',
-        description: "lançamento do Command.views.page.",
+        description: "lançamento do command.views.page.",
         link: "https://pt.dnys.dev",
       },
       {
