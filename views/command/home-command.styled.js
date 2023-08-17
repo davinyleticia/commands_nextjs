@@ -16,8 +16,6 @@ export const Content = styled.div`
   margin-top:5rem;
   flex-direction: column;
   width: 80%;
-  min-height: 78vh;
-
   @media screen and (max-width: 600px) {
     padding: 5px;
   }
@@ -137,7 +135,7 @@ export const LinkTag = styled.a`
   }
 `;
 
-
 export const Footer = styled.div`
-
+text-align: center;
+padding: 1rem;
 `;

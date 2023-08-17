@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import Layout from "../views/afulink/Layout";
 import HeaderAfulik from "../views/afulink/header/Header";
 import Hero from "../views/afulink/Hero";
@@ -20,6 +21,8 @@ const is_render = (url, options) => {
 const Index = (host) => {
   console.log(host);
 
+  const { query } = useRouter()
+
   return (
     <>
       {is_render(host.host, "afu.link") && (
@@ -38,7 +41,7 @@ const Index = (host) => {
       {is_render(host.host, "localhost:3000") && (
        <Layout pageTitle="Commad Find" favicon={'/images/favicon.svg'}>
           <HeaderCommand />
-          <HomeCommad />
+          <HomeCommad id={query.id} />
         </Layout>
       )}
     </>

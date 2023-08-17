@@ -3,7 +3,7 @@ import CloseIco from "../Ico/Close";
 
 export const Container = styled.div`
   background: #ffffff;
-  border-bottom: ${(props) => (props.active ? '2px solid #FF7F00' : 'none')};
+  border-bottom: ${(props) => (props.active ? "2px solid #FF7F00" : "none")};
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
     0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12);
   border-radius: 8px;
@@ -46,6 +46,10 @@ export const DivisionLine = styled.div`
 export const Content = styled.div`
   padding: 0.5rem !important;
   width: 25rem;
+
+  @media screen and (max-width: 600px) {
+    width: 18rem;
+  }
 `;
 
 export const ContentInfo = styled.div`

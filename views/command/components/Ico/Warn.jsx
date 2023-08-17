@@ -3,8 +3,8 @@ import React from 'react';
 function WarnIco() {
   return (
     <svg
-      width="60"
-      height="51"
+      width="160"
+      height="151"
       viewBox="0 0 60 51"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
