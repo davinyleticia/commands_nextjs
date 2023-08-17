@@ -75,7 +75,7 @@ export default function HomeCommad({ id }) {
 
   useEffect(() => {
     setTagSearch(id);
-  }, [router]);
+  }, [searchParams]);
 
   // When user submits the form, save the favorite number to the local storage
   const play = useCallback(
