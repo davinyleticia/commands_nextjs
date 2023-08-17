@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import Alert from '../../components/Alert/Alert';
 import LogoIco from '../../components/Ico/Logo';
+import NotificationBoard from '../NotificationBoard/NotificationBoard';
 
 
 import {
@@ -12,7 +13,7 @@ import {
 
 
 function HeaderCommand() {
- const [isVisible, setIsVisible] = useState();
+ const [isVisible, setIsVisible] = useState(true);
 
  const hanldenShowNotifications = useCallback(() => {
   if (isVisible === true) {
@@ -24,12 +25,14 @@ function HeaderCommand() {
   }
 }, [isVisible]);
 
+console.log(isVisible)
+
   return (
     <React.Fragment>
       <Container>
-        <ContentLeft>
+        <ContentLeft onClick={() => setIsVisible(true)}>
           {/* <MenuIco /> */}
-          <LogoIco />
+          <LogoIco/>
         </ContentLeft>
         <ContentRight>
           <Alert
@@ -38,9 +41,7 @@ function HeaderCommand() {
         </ContentRight>
       </Container>
       {isVisible && (
-        <Notifications
-
-        />
+        <NotificationBoard/>
       )}
     </React.Fragment>
   );

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Cads = styled.div`
+export const Container = styled.div`
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -11,11 +11,12 @@ export const Cads = styled.div`
   padding: 1rem;
   width: 30rem;
   margin-top: 5.9rem;
-  z-index:10000;
+`;
 
-  @media screen and (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem !important;
-  }
+export const Text = styled.div`
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0 !important;
+  margin: 0 !important;
 `;
