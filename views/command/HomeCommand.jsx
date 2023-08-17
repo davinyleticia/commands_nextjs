@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import Pagination from "./components/Pagination/Pagination";
 import {
   Container,
@@ -56,7 +56,7 @@ export default function HomeCommad() {
     .slice()
     .slice(indexOfFirstItem, indexOfLastItem);
 
-  useEffect(() => {
+useEffect(() => {
     let value;
     // Get the value from local storage if it exists
     value = localStorage.getItem("tag_search") || "bashBasico";
@@ -64,8 +64,9 @@ export default function HomeCommad() {
   }, []);
 
   // When user submits the form, save the favorite number to the local storage
-  useEffect(() => {
-    localStorage.setItem("tag_search", tagSearch);
+  const play = useCallback((value) => {
+    localStorage.setItem("tag_search", value);
+    setTagSearch(value)
   }, [tagSearch]);
 
   return (
@@ -73,10 +74,10 @@ export default function HomeCommad() {
       <Content>
         <Description>
           Tag Disponíveis:{" "}
-          <LinkTag onClick={() => setTagSearch("bashBasico")}>
+          <LinkTag onClick={() => play("bashBasico")}>
             #BashBasico
           </LinkTag>{""}
-          <LinkTag onClick={() => setTagSearch("git")}>#Git</LinkTag>
+          <LinkTag onClick={() => play("git")}>#Git</LinkTag>
         </Description>
 
         <SearchTitle>Resultado: {tagSearch} </SearchTitle>

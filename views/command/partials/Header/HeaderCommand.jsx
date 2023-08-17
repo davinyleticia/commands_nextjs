@@ -13,7 +13,7 @@ import {
 
 
 function HeaderCommand() {
- const [isVisible, setIsVisible] = useState(true);
+ const [isVisible, setIsVisible] = useState(false);
 
  const hanldenShowNotifications = useCallback(() => {
   if (isVisible === true) {
@@ -24,8 +24,6 @@ function HeaderCommand() {
     setIsVisible(true);
   }
 }, [isVisible]);
-
-console.log(isVisible)
 
   return (
     <React.Fragment>
