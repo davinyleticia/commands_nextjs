@@ -30,13 +30,13 @@ const Index = (host) => {
         </Layout>
       )}
       {is_render(host.host, "command.views.page") && (
-        <Layout pageTitle="Commad Find">
+        <Layout pageTitle="Commad Find" favicon={'/images/favicon.svg'}>
           <HeaderCommand />
           <HomeCommad />
         </Layout>
       )}
       {is_render(host.host, "localhost:3000") && (
-        <Layout pageTitle="Commad Find">
+       <Layout pageTitle="Commad Find" favicon={'/images/favicon.svg'}>
           <HeaderCommand />
           <HomeCommad />
         </Layout>
