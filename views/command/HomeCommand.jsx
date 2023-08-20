@@ -25,7 +25,7 @@ export default function HomeCommad({ id }) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-
+  
   useEffect(() => {
     let abortController = new AbortController();
 
@@ -72,6 +72,7 @@ export default function HomeCommad({ id }) {
     },
     [searchParams]
   );
+
 
   useEffect(() => {
     setTagSearch(id);

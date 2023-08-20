@@ -21,7 +21,8 @@ const is_render = (url, options) => {
 const Index = (host) => {
   console.log(host);
 
-  const { query } = useRouter()
+  const router = useRouter()
+  const {id} = router.query
 
   return (
     <>
