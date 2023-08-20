@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import Layout from "../views/afulink/Layout";
 import HeaderAfulik from "../views/afulink/header/Header";
 import Hero from "../views/afulink/Hero";
@@ -19,10 +19,10 @@ const is_render = (url, options) => {
 };
 
 const Index = (host) => {
-  console.log(host);
+  const router = useRouter();
+  const { id } = router.query;
 
-  const router = useRouter()
-  const {id} = router.query
+  console.log(host);
 
   return (
     <>
@@ -50,10 +50,16 @@ const Index = (host) => {
 };
 
 export async function getServerSideProps(context) {
+
+
+
   const host = context.req.headers.host;
+
   return {
     props: { host }, // will be passed to the page component as props
   };
 }
+
+
 
 export default Index;
