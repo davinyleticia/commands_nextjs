@@ -42,7 +42,7 @@ const Index = (host) => {
       {is_render(host.host, "localhost:3000") && (
        <Layout pageTitle="Commad Find" favicon={'/images/favicon.svg'}>
           <HeaderCommand />
-          <HomeCommad id={query.id} />
+          <HomeCommad id={id} />
         </Layout>
       )}
     </>
