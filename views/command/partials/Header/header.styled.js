@@ -43,3 +43,12 @@ export const Proficiency = styled.span`
   font-size: 1.5rem;
   color: #d5d5d5;
 `;
+
+
+export const Text = styled.div`
+    size: 10px;
+  @media screen and (max-width: 600px) {
+  size: 16px;
+  }
+`;
+

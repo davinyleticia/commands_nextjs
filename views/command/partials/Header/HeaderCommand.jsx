@@ -8,6 +8,7 @@ import {
   Container,
   ContentLeft,
   ContentRight,
+  Text,
 
 } from './header.styled';
 
@@ -30,7 +31,7 @@ function HeaderCommand() {
       <Container>
         <ContentLeft onClick={() => setIsVisible(true)}>
           {/* <MenuIco /> */}
-          <LogoIco/>
+          <Text>COMMAND VIEWS PAGE</Text>
         </ContentLeft>
         <ContentRight>
           <Alert
