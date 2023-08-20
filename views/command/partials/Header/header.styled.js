@@ -46,9 +46,9 @@ export const Proficiency = styled.span`
 
 
 export const Text = styled.div`
-    size: 10px;
+    font-size: 1.5rem;
   @media screen and (max-width: 600px) {
-  size: 16px;
+    font-size: 20px;
   }
 `;
 
