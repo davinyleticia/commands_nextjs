@@ -18,7 +18,7 @@ const Index = ({host}) => {
   return (
     <>
       {renderAfulik && (
-        <Layout pageTitle="Afulink Informática">
+        <Layout pageTitle="Afulink Informática" favicon={'/images/logo.svg'}>
           <HeaderAfulik url={"."} />
           <Hero />
           <Footer />
