@@ -18,20 +18,20 @@ const Index = ({host}) => {
   return (
     <>
       {renderAfulik && (
-        <Layout pageTitle="Afulink Informática" favicon={'/images/logo.svg'}>
+        <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
           <HeaderAfulik url={"."} />
           <Hero />
           <Footer />
         </Layout>
       )}
       {renderCommand && (
-        <Layout pageTitle="Commad Find" favicon={"/images/favicon.svg"}>
+        <Layout pageTitle="Commad Views Page" favicon={"/images/favicon.svg"}>
           <HeaderCommand />
           <HomeCommad id={id || 'bashBasico'} />
         </Layout>
       )}
       {localhost && (
-        <Layout pageTitle="Commad Find" favicon={"/images/favicon.svg"}>
+        <Layout pageTitle="Commad Views Page" favicon={"/images/favicon.svg"}>
           <HeaderCommand />
           <HomeCommad id={id || 'bashBasico'} />
         </Layout>
