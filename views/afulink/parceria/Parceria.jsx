@@ -9,7 +9,7 @@ import { Container, Content, Titulo } from "./parceiro.styled";
 function Parceria() {
   return (
     <Container>
-      <Titulo>Parceria</Titulo>
+      <Titulo>Clientes</Titulo>
       <Content>
         <DIOIco />
         <img
