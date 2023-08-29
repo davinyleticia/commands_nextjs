@@ -5,7 +5,7 @@ import PolicyPage from "../views/afulink/policy";
 
 const Policy = () => {
   return (
-    <Layout pageTitle="Afulink Informática">
+    <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
       <Header url={'..'} />
       <PolicyPage />
       <Footer />

@@ -5,7 +5,7 @@ import Footer from "../views/afulink/Footer";
 
 const Index = () => {
   return (
-    <Layout pageTitle="Afulink Informática">
+    <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
       <Header url={'..'} />
       <Login />
       <Footer />
