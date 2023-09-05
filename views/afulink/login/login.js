@@ -7,7 +7,7 @@ const FeatureBox = () => {
   return (
     <>
       <Row md={{ size: 6, offset: 1 }} className="justify-content-center">
-        <form method="post" name="login" action="/index.php/login">
+        <form method="post" name="login" action="https://board-afulink.dnys.dev/login">
         
         <Input id="user" type="text" placeholder="Nome ou E-mail" name="user" autocapitalize="none" required="required"/>
         <Input id="password" type="password" placeholder="Senha" name="user" autocapitalize="none" required="required"/>
