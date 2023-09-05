@@ -11,7 +11,7 @@ const FeatureBox = () => {
         
         <Input id="user" type="text" placeholder="Nome ou E-mail" name="user" autocapitalize="none" required="required"/>
         <Input id="password" type="password" placeholder="Senha" name="user" autocapitalize="none" required="required"/>
-          <Button as="a" href="https://app.afu.link" className="btn btn-warning mt-3">
+          <Button type="submit" className="btn btn-warning mt-3">
             login <GrSend />
           </Button>
         </form>
