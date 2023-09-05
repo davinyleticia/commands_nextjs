@@ -10,7 +10,7 @@ const FeatureBox = () => {
         <form method="post" name="login" action="https://board-afulink.dnys.dev/login">
         
         <Input id="user" type="text" placeholder="Nome ou E-mail" name="user" autocapitalize="none" required="required"/>
-        <Input id="password" type="password" placeholder="Senha" name="user" autocapitalize="none" required="required"/>
+        <Input id="password" type="password" placeholder="Senha" name="password" autocapitalize="none" required="required"/>
           <Button type="submit" className="btn btn-warning mt-3">
             login <GrSend />
           </Button>
