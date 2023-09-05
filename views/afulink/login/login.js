@@ -7,16 +7,17 @@ const FeatureBox = () => {
   return (
     <>
       <Row md={{ size: 6, offset: 1 }} className="justify-content-center">
-        <Btn>
-          <Input placeholder="E-mail" />
-          <Input placeholder="Senha" />
+        <form method="post" name="login" action="/index.php/login">
+        
+        <Input id="user" type="text" placeholder="Nome ou E-mail" name="user" autocapitalize="none" required="required"/>
+        <Input id="password" type="password" placeholder="Senha" name="user" autocapitalize="none" required="required"/>
           <Button as="a" href="https://app.afu.link" className="btn btn-warning mt-3">
             login <GrSend />
           </Button>
-        </Btn>
+        </form>
       </Row>
       <Row className="justify-content-center section">
-        <a href="">Esqueci a senha</a>
+        <a href="https://board-afulink.dnys.dev/login">Esqueci a senha</a>
       </Row>
     </>
   );
