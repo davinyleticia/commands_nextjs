@@ -105,5 +105,19 @@ export default function handler(req, res) {
       language: "bashBasico",
       link: "https://commands.views.page",
     },
+    {
+      id: 16,
+      name: "ps",
+      description: "Exibe informações sobre os processos ativos.",
+      language: "bashBasico",
+      link: "https://commands.views.page",
+    },
+    {
+      id: 17,
+      name: "pstree",
+      description: "Exibe informações sobre os processos ativos em forma de árvore.",
+      language: "bashBasico",
+      link: "https://commands.views.page",
+    },
 ]);
 }

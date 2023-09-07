@@ -48,7 +48,7 @@ export default function HomeCommad({ id }) {
     return () => abortController.abort();
   }, [tagSearch]);
 
-  const itemsPerPage = 9;
+  const itemsPerPage = 15;
   const totalPages = Math.ceil(
     itemsApi.slice().sort((a, b) => new Date(b.mes) - new Date(a.mes)).length /
       itemsPerPage
