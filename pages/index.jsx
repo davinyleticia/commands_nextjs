@@ -25,13 +25,13 @@ const Index = ({host}) => {
         </Layout>
       )}
       {renderCommand && (
-        <Layout pageTitle="Commad Views Page" favicon={"/images/favicon.svg"}>
+        <Layout pageTitle="Commads Views Page" favicon={"/images/favicon.svg"}>
           <HeaderCommand />
           <HomeCommad id={id || 'bashBasico'} />
         </Layout>
       )}
       {localhost && (
-        <Layout pageTitle="Commad Views Page" favicon={"/images/favicon.svg"}>
+        <Layout pageTitle="Commads Views Page" favicon={"/images/favicon.svg"}>
           <HeaderCommand />
           <HomeCommad id={id || 'bashBasico'} />
         </Layout>

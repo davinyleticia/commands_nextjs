@@ -31,7 +31,7 @@ function HeaderCommand() {
       <Container>
         <ContentLeft onClick={() => setIsVisible(true)}>
           {/* <MenuIco /> */}
-          <Text>COMMAND VIEWS PAGE</Text>
+          <Text>COMMANDS VIEWS PAGE</Text>
         </ContentLeft>
         <ContentRight>
           <Alert
