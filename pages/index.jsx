@@ -12,7 +12,7 @@ const Index = ({host}) => {
   const { id } = router.query;
 
   const renderAfulik = host === "afu.link";
-  const renderCommand = host === "command.views.page";
+  const renderCommand = host === "commands.views.page";
   const localhost =  host === "localhost:3000";
 
   return (
