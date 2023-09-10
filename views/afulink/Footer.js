@@ -12,7 +12,7 @@ const Footer = () => {
     { id : 2, title : "Docs",
       child : [
           { title : "Politica de Privacidade", link : "/policy" },
-          { title: "command.views.page", link: "https://command.views.page/"}
+          { title: "commands.views.page", link: "https://commands.views.page/"}
       ]
     },
   ];
