@@ -54,6 +54,9 @@ const Header = ({ url }) => {
                 <NavLink href="https://tipsbook.info">Tips Book</NavLink>
               </NavItem>
               <NavItem>
+                <NavLink href="https://visite.la">Visite.la</NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink href="/login-sys">Login</NavLink>
               </NavItem>
             </Nav>
