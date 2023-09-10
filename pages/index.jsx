@@ -5,7 +5,6 @@ import Hero from "../views/afulink/Hero";
 import Footer from "../views/afulink/Footer";
 import HomeCommad from "../views/command/HomeCommand";
 import HeaderCommand from "../views/command/partials/Header/HeaderCommand";
-import { useEffect } from "react";
 
 const Index = ({host}) => {
   const router = useRouter();
