@@ -37,7 +37,7 @@ const Detail = ({ itemsApi }) => {
           </React.Fragment>
         </Container>
       ) : (
-        "Prerendered"
+        ""
       )}
     </>
   );

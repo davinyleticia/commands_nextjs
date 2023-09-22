@@ -41,7 +41,7 @@ const Blog = ({ itemsApi }) => {
           </React.Fragment>
         </Container>
       ) : (
-        "Prerendered"
+        ""
       )}
     </>
   );
