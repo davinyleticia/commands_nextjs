@@ -5,8 +5,14 @@ import Hero from "../views/afulink/Hero";
 import Footer from "../views/afulink/Footer";
 import HomeCommad from "../views/command/HomeCommand";
 import HeaderCommand from "../views/command/partials/Header/HeaderCommand";
+import Blog from "../views/afulink/blog";
 
-const Index = ({ host }) => {
+
+// 15 minutos
+const CACHE_IN_SECONDS_TIME = 900;
+
+
+const Tipsbook = ({ host, itemsApi }) => {
   const router = useRouter();
   const { id } = router.query;
 
@@ -19,7 +25,7 @@ const Index = ({ host }) => {
       {renderAfulik && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
           <HeaderAfulik url={"."} />
-          <Hero />
+          <Blog itemsApi={itemsApi}/>
           <Footer />
         </Layout>
       )}
@@ -31,21 +37,47 @@ const Index = ({ host }) => {
       )}
       {localhost && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
-          <HeaderAfulik url={"."} />
-          <Hero />
-          <Footer />
-        </Layout>
+        <HeaderAfulik url={"."} />
+        <Blog itemsApi={itemsApi}/>
+        <Footer />
+      </Layout>
       )}
     </>
   );
 };
 
-export async function getServerSideProps(context) {
-  const host = context.req.headers.host;
+export default Tipsbook;
 
-  return {
-    props: { host }, // will be passed to the page component as props
-  };
+async function fetchGitHubAPI() {
+  const res = await fetch("https://app.dnys.dev/wp-json/wp/v2/posts/");
+  if (!res.ok) {
+    throw new Error(res.status);
+  }
+
+  return res.json();
 }
 
-export default Index;
+
+export async function getServerSideProps(context) {
+  try {
+    const host = context.req.headers.host;
+    const itemsApi = await fetchGitHubAPI();
+
+    // Check if itemsApi is an array or an object and convert it to JSON-serializable data
+    const serializableItemsApi = Array.isArray(itemsApi) ? itemsApi : [];
+
+    console.log(serializableItemsApi)
+
+    return {
+      props: {
+        itemsApi: serializableItemsApi,
+        host,
+      },
+    };
+  } catch (e) {
+    console.error("Error fetching data:", e);
+    return {
+      notFound: true,
+    };
+  }
+}
