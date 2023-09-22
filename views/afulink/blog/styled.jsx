@@ -51,32 +51,6 @@ export const Ul = styled.ul`
   }
 `;
 
-export const CardProject = styled.li`
-  display: flex;
-  flex-direction: column;
-  margin: 10px 10px 20px;
-  justify-content: flex-start;
-  /* box-shadow: 1px 1px 1px 2px gray; */
-  border: 1px solid gray;
-  gap: 5px;
-  border-radius: 10px;
-  padding: 1rem;
-  &:hover {
-    background: #f0efef;
-    opacity: 0.8;
-  }
-  img {
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    width: 100%;
-    height: 14rem;
-  }
-
-  @media (max-width: 1265px) {
-    font-size: 13px;
-    min-height: 8rem;
-  }
-`;
 
 export const Li = styled.li`
   display: flex;
@@ -84,7 +58,7 @@ export const Li = styled.li`
   text-align: start;
   word-break: break-word;
   margin: 10px 10px 20px;
-  justify-content: space-between;
+  justify-content: flex-start;
   /* box-shadow: 1px 1px 1px 2px gray; */
   border: 1px solid #f1e8e8;
   gap: 5px;
