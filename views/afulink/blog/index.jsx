@@ -25,7 +25,7 @@ const Blog = ({ itemsApi }) => {
               {itemsApi?.map((item) => (
                 <Li key={item.id}>
                   <Url href={`tipsbook/${item.slug}`}>
-                    <img src={item.image || './images/fundo.png'} alt={item.name} />
+                    <img src={item.image || './images/fundo.jpg'} alt={item.name} />
                     <Card>
                       <TitleProject>{item.title.rendered}</TitleProject>
                       <Text
