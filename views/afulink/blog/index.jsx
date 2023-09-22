@@ -18,7 +18,6 @@ const Blog = ({ itemsApi }) => {
           <Banner>
             <div>
               <TBIco />
-              <p>TipsBook </p>
             </div>
           </Banner>
           <React.Fragment>

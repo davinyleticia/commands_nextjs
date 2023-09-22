@@ -1,13 +1,11 @@
 import { useRouter } from "next/router";
-import Layout from "../views/afulink/Layout";
-import HeaderAfulik from "../views/afulink/header/Header";
-import Footer from "../views/afulink/Footer";
-import Blog from "../views/afulink/blog";
-
+import Layout from "../../../views/afulink/Layout";
+import HeaderAfulik from "../../../views/afulink/header/Header";
+import Footer from "../../../views/afulink/Footer";
+import Blog from "../../../views/afulink/blog";
 
 // 15 minutos
 const CACHE_IN_SECONDS_TIME = 900;
-
 
 const Tipsbook = ({ host, itemsApi }) => {
   const router = useRouter();
@@ -22,19 +20,18 @@ const Tipsbook = ({ host, itemsApi }) => {
       {renderAfulik && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
           <HeaderAfulik url={"."} />
-          <Blog itemsApi={itemsApi}/>
+          <Blog itemsApi={itemsApi} />
           <Footer />
         </Layout>
       )}
-      {renderCommand && (
-        window.location.href = "https://commands.views.page/tipsbo"
-      )}
+      {renderCommand &&
+        (window.location.href = "https://commands.views.page/tipsbo")}
       {localhost && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
-        <HeaderAfulik url={"."} />
-        <Blog itemsApi={itemsApi}/>
-        <Footer />
-      </Layout>
+          <HeaderAfulik url={"."} />
+          <Blog itemsApi={itemsApi} />
+          <Footer />
+        </Layout>
       )}
     </>
   );
@@ -42,8 +39,8 @@ const Tipsbook = ({ host, itemsApi }) => {
 
 export default Tipsbook;
 
-async function fetchGitHubAPI() {
-  const res = await fetch("https://app.dnys.dev/wp-json/wp/v2/posts/");
+async function fetchGitHubAPI({slug}) {
+  const res = await fetch(`https://app.dnys.dev/wp-json/wp/v2/posts/?slug=${slug}`);
   if (!res.ok) {
     throw new Error(res.status);
   }
@@ -51,16 +48,22 @@ async function fetchGitHubAPI() {
   return res.json();
 }
 
-
 export async function getServerSideProps(context) {
   try {
+
+    const { slug } = params;
+
+    if (!slug) {
+      throw new Error('Slug for Program not found');
+    }
+
     const host = context.req.headers.host;
-    const itemsApi = await fetchGitHubAPI();
+    const itemsApi = await fetchGitHubAPI({slug: slug});
 
     // Check if itemsApi is an array or an object and convert it to JSON-serializable data
-    const serializableItemsApi = Array.isArray(itemsApi) ? itemsApi : [];
+    const serializableItemsApi = itemsApi ? itemsApi : [];
 
-    console.log(serializableItemsApi)
+
 
     return {
       props: {
@@ -71,7 +74,7 @@ export async function getServerSideProps(context) {
   } catch (e) {
     console.error("Error fetching data:", e);
     return {
-      notFound: true,
+      notFound: false,
     };
   }
 }
