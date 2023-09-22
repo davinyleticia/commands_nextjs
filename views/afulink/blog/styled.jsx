@@ -73,6 +73,7 @@ export const Li = styled.li`
   gap: 5px;
   border-radius: 10px;
   cursor: pointer;
+  align-items: center;
 
   &:hover {
     background: #f0efef;
@@ -80,9 +81,8 @@ export const Li = styled.li`
     opacity: 0.8;
   }
   img {
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    width: 100%;
+    border-radius: 50%;
+    width: 10rem;
     height: 10rem;
   }
 
@@ -95,8 +95,12 @@ export const Li = styled.li`
 export const TitleProject = styled.strong``;
 
 export const Url = styled.a`
-    text-decoration: none;
-  :hover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 1rem;
+  :hover {
     text-decoration: none;
   }
 `;
@@ -141,7 +145,7 @@ export const GroupIcons = styled.div`
 `;
 
 export const Card = styled.div`
-  padding: 1rem 1.7rem  1.7rem  1.7rem ;
+  padding: 1rem 0 ;
   display: flex
   flex-direction:column;
   justify-content: space-between;
