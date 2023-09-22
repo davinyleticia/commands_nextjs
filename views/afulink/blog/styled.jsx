@@ -10,6 +10,15 @@ export const Banner = styled.div`
   background: #1b6a94;
   padding: 1rem;
   margin: 1rem 0;
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    p{
+    font-size: 3rem;
+    margin: 0 1rem;
+  }
+  }
 `;
 
 export const Title = styled.h4`
@@ -50,7 +59,6 @@ export const Ul = styled.ul`
     width: 90%;
   }
 `;
-
 
 export const Li = styled.li`
   display: flex;

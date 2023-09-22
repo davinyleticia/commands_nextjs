@@ -30,10 +30,7 @@ const Tipsbook = ({ host, itemsApi }) => {
         </Layout>
       )}
       {renderCommand && (
-        <Layout pageTitle="Commads Views Page" favicon={"/images/favicon.svg"}>
-          <HeaderCommand />
-          <HomeCommad id={id || "bashBasico"} />
-        </Layout>
+        window.location.href = "http://commands.views.page"
       )}
       {localhost && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
