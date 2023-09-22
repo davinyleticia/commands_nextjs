@@ -14,16 +14,17 @@ export const Banner = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    p{
-    font-size: 3rem;
-    margin: 0 1rem;
-  }
+    p {
+      font-size: 3rem;
+      margin: 0 1rem;
+    }
   }
 `;
 
-export const Title = styled.h4`
+export const Title = styled.h1`
   padding: 0 !important;
-  margin: 0 !important;
+  margin: 3rem 0 !important;
+  text-align: center;
 `;
 export const Description = styled.strong`
   display: flex;
@@ -82,7 +83,7 @@ export const Li = styled.li`
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     width: 100%;
-    height: 14rem;
+    height: 10rem;
   }
 
   @media (max-width: 1265px) {
@@ -93,15 +94,11 @@ export const Li = styled.li`
 
 export const TitleProject = styled.strong``;
 
-export const Url = styled.button`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: transparent;
-  color: #fff;
-  border: none;
-  text-decoration: none;
-  gap: 1rem;
+export const Url = styled.a`
+    text-decoration: none;
+  :hover{
+    text-decoration: none;
+  }
 `;
 
 export const Text = styled.p`

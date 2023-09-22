@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import TBIco from "../ico/tb";
-import { Banner, Card, Li, Text, TitleProject, Ul } from "./styled";
+import { Banner, Card, Li, Text, TitleProject, Ul, Url } from "./styled";
 
 const Blog = ({ itemsApi }) => {
   console.log(itemsApi?.map((elem) => elem));
@@ -24,15 +24,17 @@ const Blog = ({ itemsApi }) => {
             <Ul>
               {itemsApi?.map((item) => (
                 <Li key={item.id}>
-                  <img src={item.image} alt={item.name} />
-                  <Card>
-                    <TitleProject>{item.title.rendered}</TitleProject>
-                    <Text
-                      dangerouslySetInnerHTML={{
-                        __html: item.excerpt.rendered || "Sem descrição",
-                      }}
-                    />
-                  </Card>
+                  <Url href={`tipsbook/${item.slug}`}>
+                    <img src={item.image || './images/fundo.png'} alt={item.name} />
+                    <Card>
+                      <TitleProject>{item.title.rendered}</TitleProject>
+                      <Text
+                        dangerouslySetInnerHTML={{
+                          __html: item.excerpt.rendered || "Sem descrição",
+                        }}
+                      />
+                    </Card>
+                  </Url>
                 </Li>
               ))}
             </Ul>

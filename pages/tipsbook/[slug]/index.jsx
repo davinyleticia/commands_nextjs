@@ -3,6 +3,7 @@ import Layout from "../../../views/afulink/Layout";
 import HeaderAfulik from "../../../views/afulink/header/Header";
 import Footer from "../../../views/afulink/Footer";
 import Blog from "../../../views/afulink/blog";
+import Detail from "../../../views/afulink/blog/detail";
 
 // 15 minutos
 const CACHE_IN_SECONDS_TIME = 900;
@@ -19,8 +20,8 @@ const Tipsbook = ({ host, itemsApi }) => {
     <>
       {renderAfulik && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
-          <HeaderAfulik url={"."} />
-          <Blog itemsApi={itemsApi} />
+          <HeaderAfulik url={"../"} />
+          <Detail itemsApi={itemsApi} />
           <Footer />
         </Layout>
       )}
@@ -28,8 +29,8 @@ const Tipsbook = ({ host, itemsApi }) => {
         (window.location.href = "https://commands.views.page/tipsbo")}
       {localhost && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
-          <HeaderAfulik url={"."} />
-          <Blog itemsApi={itemsApi} />
+          <HeaderAfulik url={"../"} />
+          <Detail itemsApi={itemsApi} />
           <Footer />
         </Layout>
       )}
@@ -48,7 +49,7 @@ async function fetchGitHubAPI({slug}) {
   return res.json();
 }
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps({req, params}) {
   try {
 
     const { slug } = params;
@@ -57,7 +58,7 @@ export async function getServerSideProps(context) {
       throw new Error('Slug for Program not found');
     }
 
-    const host = context.req.headers.host;
+    const host = req.headers.host;
     const itemsApi = await fetchGitHubAPI({slug: slug});
 
     // Check if itemsApi is an array or an object and convert it to JSON-serializable data

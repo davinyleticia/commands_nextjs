@@ -10,7 +10,7 @@ import {
 } from "reactstrap";
 import { NavbarHeader, Image } from "./header.styled";
 
-const Header = ({ url }) => {
+const Header = ({ url = '/' }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -31,8 +31,8 @@ const Header = ({ url }) => {
     <div className={`header${sticky ? "sticky" : ""}`}>
       <Navbar light expand="md">
         <Container>
-          <NavbarHeader href="/">
-            <Image src="./images/logo.svg" width={40} height={40} />
+          <NavbarHeader href={url}>
+            <Image src={`${url}/images/logo.svg`} width={40} height={40} />
             <h1>afulink</h1>
           </NavbarHeader>
           <NavbarToggler onClick={toggle} />
@@ -54,10 +54,10 @@ const Header = ({ url }) => {
                 <NavLink href="https://visite.la">Visite.la</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="./tipsbook">TipsBook</NavLink>
+                <NavLink href={`${url}/tipsbook`}>TipsBook</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/login-sys">Login</NavLink>
+                <NavLink href={`${url}/login-sys`}>Login</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
