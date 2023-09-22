@@ -125,7 +125,7 @@ export default function HomeCommad({ id }) {
       {itemsApi.length === 0 && <NotFound />}
       <Footer>
         Todos direitos reservados -{" "}
-        <a href="mailto://team@afu.link">Feedback</a> - criado por Daviny Letícia - patrocinado por Afu.link - feito com
+        <a href="mailto://team@afu.link">Feedback</a> - criado por Daviny Letícia - patrocinado por Afulink © - feito com
         ❤️ São Paulo - Brasil
       </Footer>
     </Container>
