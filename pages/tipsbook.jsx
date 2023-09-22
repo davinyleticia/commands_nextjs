@@ -30,7 +30,7 @@ const Tipsbook = ({ host, itemsApi }) => {
         </Layout>
       )}
       {renderCommand && (
-        window.location.href = "http://commands.views.page"
+        window.location.href = "https://commands.views.page/tipsbo"
       )}
       {localhost && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
