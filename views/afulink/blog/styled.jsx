@@ -73,7 +73,7 @@ export const Li = styled.li`
   margin: 10px 10px 20px;
   justify-content: flex-start;
   /* box-shadow: 1px 1px 1px 2px gray; */
-  border: 1px solid #f1e8e8;
+  border: 1px solid #b1a8a8;
   gap: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -153,4 +153,28 @@ export const Card = styled.div`
   display: flex
   flex-direction:column;
   justify-content: space-between;
+`;
+
+export const NewLatter = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  word-break: break-word;
+  margin: 10px 10px 20px;
+  justify-content: flex-start;
+  /* box-shadow: 1px 1px 1px 2px gray; */
+  border: 1px solid #7d6c6c;
+  gap: 5px;
+  border-radius: 10px;
+  align-items: center;
+  padding: 1rem;
+
+  p {
+    font-size: 0.9em !important;
+  }
+
+  @media (max-width: 1265px) {
+    font-size: 13px;
+    min-height: 8rem;
+  }
 `;

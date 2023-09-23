@@ -1,5 +1,6 @@
+import { NavItem } from "reactstrap";
 import styled from "styled-components";
-import { NavbarBrand } from "reactstrap";
+
 
 export const Image = styled.img`
   display: flex;
@@ -18,3 +19,9 @@ export const NavbarHeader = styled.a`
     text-decoration: none;
     }
 `;
+
+export const Item = styled(NavItem)`
+padding-left: 0 !important;
+padding-right: 50px ;
+
+`

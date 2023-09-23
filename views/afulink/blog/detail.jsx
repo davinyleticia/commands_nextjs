@@ -11,7 +11,7 @@ const Detail = ({ itemsApi }) => {
   }, []);
 
   return (
-    <>
+    <><hr></hr>
       {isClient ? (
         <Container>
           <Banner>

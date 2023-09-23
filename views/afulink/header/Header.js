@@ -4,11 +4,10 @@ import {
   Navbar,
   NavbarToggler,
   Nav,
-  NavItem,
   NavLink,
   Container,
 } from "reactstrap";
-import { NavbarHeader, Image } from "./header.styled";
+import { NavbarHeader, Image, Item } from "./header.styled";
 
 const Header = ({ url = '/', isTipsbook }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,28 +37,19 @@ const Header = ({ url = '/', isTipsbook }) => {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="m-auto" navbar>
-             {!isTipsbook ?( <NavItem>
+             {!isTipsbook ?( <Item>
                 <NavLink href="/">Home</NavLink>
-              </NavItem>
+              </Item>
               ):(
-                <NavItem>
+                <Item>
                 <NavLink href="/">Afulink</NavLink>
-              </NavItem>)}
-              {/* <NavItem>
-                <NavLink href="/certificado">Certificação / Cursos</NavLink>
-              </NavItem> */}
-              {/* <NavItem>
-                <NavLink href={"services"}>Nosso Serviços</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/about">Sobre</NavLink>
-              </NavItem> */}
-              <NavItem>
+              </Item>)}
+              <Item>
                 <NavLink href="https://visite.la">Visite.la</NavLink>
-              </NavItem>
-              <NavItem>
+              </Item>
+              <Item>
                 <NavLink href={`${url}/tipsbook`}>TipsBook</NavLink>
-              </NavItem>
+              </Item>
               {/* <NavItem>
                 <NavLink href={`${url}/login-sys`}>Login</NavLink>
               </NavItem> */}

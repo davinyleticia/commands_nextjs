@@ -20,7 +20,7 @@ const Tipsbook = ({ host, itemsApi }) => {
   return (
     <>
       {renderAfulik && (
-        <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
+        <Layout pageTitle="TipsBook" favicon={"/images/logo-tp.svg"}>
           <HeaderAfulik url={"."} isTipsbook={true} />
           <Blog itemsApi={itemsApi}/>
           <Footer />
@@ -30,7 +30,7 @@ const Tipsbook = ({ host, itemsApi }) => {
         window.location.href = "https://commands.views.page/tipsbo"
       )}
       {localhost && (
-        <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
+        <Layout pageTitle="TipsBook" favicon={"/images/logo-tp.svg"}>
         <HeaderAfulik url={"."} isTipsbook={true}/>
         <Blog itemsApi={itemsApi}/>
         <Footer />

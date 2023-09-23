@@ -33,18 +33,6 @@ const Blog = ({ itemsApi }) => {
           </Banner>
           <hr></hr>
           <React.Fragment>
-            <NewLatter>
-              <h3>
-                Notícias de Tecnologia para quem não tem tempo de ler notícias.
-              </h3>
-              <p>Junte-se à nossa turma de 115.065 leitores ativos:</p>
-              <div classname=" mt-3">
-                <Input placeholder="Seu E-mail Principal" />
-              </div>
-              <Button className="btn btn-warning mt-3">
-                Inscrever-se (Grátis) <GrSend />
-              </Button>
-            </NewLatter>
             <Ul>
               {itemsApi?.map((item) => (
                 <Li key={item.id}>
@@ -65,13 +53,6 @@ const Blog = ({ itemsApi }) => {
                 </Li>
               ))}
             </Ul>
-            <NewLatter>
-              <h3>
-                        Canal TipsBook no Youtube
-              </h3>
-              <p>Junte-se à nossa turma também no youtube: segue, compatilhe e deixe o seu joinha:</p>
-             
-            </NewLatter>
           </React.Fragment>
         </Container>
       ) : (
