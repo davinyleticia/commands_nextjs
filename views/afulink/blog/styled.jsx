@@ -9,10 +9,15 @@ export const Banner = styled.div`
   height: 10rem;
   padding: 1rem;
   margin: 1rem 0;
-  div {
+  a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-decoration: none;
+    :hover {
+      text-decoration: none;
+      color: #000;
+    }
     p {
       font-size: 3rem;
       margin: 0 1rem;

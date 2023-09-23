@@ -16,10 +16,10 @@ const Blog = ({ itemsApi }) => {
       {isClient ? (
         <Container>
           <Banner>
-            <div>
+            <a href="./tipsbook">
               <TBIco />
               <p>TipsBook</p>
-            </div>
+            </a>
           </Banner>
           <hr></hr>
           <React.Fragment>
