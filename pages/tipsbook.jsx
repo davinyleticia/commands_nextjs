@@ -21,7 +21,7 @@ const Tipsbook = ({ host, itemsApi }) => {
     <>
       {renderAfulik && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
-          <HeaderAfulik url={"."} />
+          <HeaderAfulik url={"."} isTipsbook={true} />
           <Blog itemsApi={itemsApi}/>
           <Footer />
         </Layout>
@@ -31,7 +31,7 @@ const Tipsbook = ({ host, itemsApi }) => {
       )}
       {localhost && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
-        <HeaderAfulik url={"."} />
+        <HeaderAfulik url={"."} isTipsbook={true}/>
         <Blog itemsApi={itemsApi}/>
         <Footer />
       </Layout>
