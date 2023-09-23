@@ -10,7 +10,7 @@ import {
 } from "reactstrap";
 import { NavbarHeader, Image } from "./header.styled";
 
-const Header = ({ url = '/' }) => {
+const Header = ({ url = '/', isTipsbook }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -38,9 +38,13 @@ const Header = ({ url = '/' }) => {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="m-auto" navbar>
-              <NavItem>
+             {!isTipsbook ?( <NavItem>
                 <NavLink href="/">Home</NavLink>
               </NavItem>
+              ):(
+                <NavItem>
+                <NavLink href="/">Home</NavLink>
+              </NavItem>)}
               {/* <NavItem>
                 <NavLink href="/certificado">Certificação / Cursos</NavLink>
               </NavItem> */}
