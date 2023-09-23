@@ -19,7 +19,7 @@ const Tipsbook = ({ host, itemsApi, slug }) => {
   return (
     <>
       {renderAfulik && (
-        <Layout pageTitle={`Afulink Informática ${slug.replace('-',' ')}`} favicon={"/images/logo.svg"}>
+        <Layout pageTitle={`Afulink Informática - ${slug.replace('-',' ')}`} favicon={"/images/logo.svg"}>
           <HeaderAfulik url={"../"} />
           <Detail itemsApi={itemsApi} />
           <Footer />
