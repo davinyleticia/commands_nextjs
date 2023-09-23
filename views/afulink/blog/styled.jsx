@@ -3,11 +3,10 @@ import styled from "styled-components";
 export const Banner = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 10rem;
-  background: #1b6a94;
   padding: 1rem;
   margin: 1rem 0;
   div {

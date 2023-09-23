@@ -4,7 +4,6 @@ import TBIco from "../ico/tb";
 import { Banner, Card, Li, Text, Title, TitleProject, Ul } from "./styled";
 
 const Detail = ({ itemsApi }) => {
- 
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -18,19 +17,20 @@ const Detail = ({ itemsApi }) => {
           <Banner>
             <div>
               <TBIco />
+              <p>TipsBook</p>
             </div>
           </Banner>
+          <hr></hr>
           <React.Fragment>
             <div>
               {itemsApi?.map((item) => (
                 <div key={item.id}>
-
-                    <Title>{item.title.rendered}</Title>
-                    <Text
-                      dangerouslySetInnerHTML={{
-                        __html: item.content.rendered || "Sem descrição",
-                      }}
-                    />
+                  <Title>{item.title.rendered}</Title>
+                  <Text
+                    dangerouslySetInnerHTML={{
+                      __html: item.content.rendered || "Sem descrição",
+                    }}
+                  />
                 </div>
               ))}
             </div>

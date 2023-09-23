@@ -18,8 +18,10 @@ const Blog = ({ itemsApi }) => {
           <Banner>
             <div>
               <TBIco />
+              <p>TipsBook</p>
             </div>
           </Banner>
+          <hr></hr>
           <React.Fragment>
             <Ul>
               {itemsApi?.map((item) => (
