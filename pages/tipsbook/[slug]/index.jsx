@@ -8,7 +8,7 @@ import Detail from "../../../views/afulink/blog/detail";
 // 15 minutos
 const CACHE_IN_SECONDS_TIME = 900;
 
-const Tipsbook = ({ host, itemsApi }) => {
+const Tipsbook = ({ host, itemsApi, slug }) => {
   const router = useRouter();
   const { id } = router.query;
 
@@ -19,7 +19,7 @@ const Tipsbook = ({ host, itemsApi }) => {
   return (
     <>
       {renderAfulik && (
-        <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
+        <Layout pageTitle={`Afulink Informática ${slug.replace('-',' ')}`} favicon={"/images/logo.svg"}>
           <HeaderAfulik url={"../"} />
           <Detail itemsApi={itemsApi} />
           <Footer />
@@ -28,10 +28,11 @@ const Tipsbook = ({ host, itemsApi }) => {
       {renderCommand &&
         (window.location.href = "https://commands.views.page/tipsbo")}
       {localhost && (
-        <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
+        <Layout ppageTitle={`Afulink Informática - ${slug.replace('-',' ')}`} favicon={"/images/logo.svg"}>
           <HeaderAfulik url={"../"} />
           <Detail itemsApi={itemsApi} />
           <Footer />
+          [console.log(slug)]
         </Layout>
       )}
     </>
@@ -69,6 +70,7 @@ export async function getServerSideProps({req, params}) {
     return {
       props: {
         itemsApi: serializableItemsApi,
+        slug: slug,
         host,
       },
     };

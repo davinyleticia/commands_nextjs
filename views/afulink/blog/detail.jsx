@@ -4,7 +4,7 @@ import TBIco from "../ico/tb";
 import { Banner, Card, Li, Text, Title, TitleProject, Ul } from "./styled";
 
 const Detail = ({ itemsApi }) => {
-  console.log(itemsApi?.map((elem) => elem));
+ 
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
