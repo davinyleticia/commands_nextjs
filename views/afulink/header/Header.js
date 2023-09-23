@@ -56,9 +56,9 @@ const Header = ({ url = '/' }) => {
               <NavItem>
                 <NavLink href={`${url}/tipsbook`}>TipsBook</NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink href={`${url}/login-sys`}>Login</NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>
