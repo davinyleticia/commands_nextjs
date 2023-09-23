@@ -16,10 +16,14 @@ const Tipsbook = ({ host, itemsApi, slug }) => {
   const renderCommand = host === "commands.views.page";
   const localhost = host === "localhost:3000";
 
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   return (
     <>
       {renderAfulik && (
-        <Layout pageTitle={`Afulink Informática - ${slug.replace(/-/g, ' ')}`} favicon={"/images/logo.svg"}>
+        <Layout pageTitle={`Afulink Informática - ${capitalizeFirstLetter(slug.replace(/-/g, ' '))}`} favicon={"/images/logo.svg"}>
           <HeaderAfulik url={"../"} />
           <Detail itemsApi={itemsApi} />
           <Footer />
@@ -28,7 +32,7 @@ const Tipsbook = ({ host, itemsApi, slug }) => {
       {renderCommand &&
         (window.location.href = "https://commands.views.page/tipsbo")}
       {localhost && (
-        <Layout ppageTitle={`Afulink Informática - ${slug.replace(/-/g, ' ')}`} favicon={"/images/logo.svg"}>
+        <Layout ppageTitle={`Afulink Informática - ${capitalizeFirstLetter(slug.replace(/-/g, ' '))}`} favicon={"/images/logo.svg"}>
           <HeaderAfulik url={"../"} />
           <Detail itemsApi={itemsApi} />
           <Footer />
