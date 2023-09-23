@@ -24,7 +24,7 @@ const Tipsbook = ({ host, itemsApi, slug }) => {
     <>
       {renderAfulik && (
         <Layout pageTitle={`Afulink Informática - ${capitalizeFirstLetter(slug.replace(/-/g, ' '))}`} favicon={"/images/logo.svg"}>
-          <HeaderAfulik url={"../"} />
+          <HeaderAfulik url={"."} isTipsbook={true} />
           <Detail itemsApi={itemsApi} />
           <Footer />
         </Layout>
@@ -33,7 +33,7 @@ const Tipsbook = ({ host, itemsApi, slug }) => {
         (window.location.href = "https://commands.views.page/tipsbo")}
       {localhost && (
         <Layout ppageTitle={`Afulink Informática - ${capitalizeFirstLetter(slug.replace(/-/g, ' '))}`} favicon={"/images/logo.svg"}>
-          <HeaderAfulik url={"../"} />
+         <HeaderAfulik url={"."} isTipsbook={true} />
           <Detail itemsApi={itemsApi} />
           <Footer />
           [console.log(slug)]
