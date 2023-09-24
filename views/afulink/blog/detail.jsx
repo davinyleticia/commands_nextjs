@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import TBIco from "../components/ico/tb";
-import { Banner, Card, Li, Text, Title, TitleProject, Ul } from "./styled";
+import { Banner, Card, Li, Marca, Text, Title, TitleProject, Ul } from "./styled";
 
 const Detail = ({ itemsApi }) => {
   const [isClient, setIsClient] = useState(false);
@@ -17,7 +17,7 @@ const Detail = ({ itemsApi }) => {
           <Banner>
           <a href="../tipsbook">
               <TBIco />
-              <p>TipsBook</p>®️
+              <p>TipsBook</p><Marca>®️</Marca>
             </a>
           </Banner>
           <hr></hr>

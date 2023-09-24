@@ -8,7 +8,7 @@ export const Banner = styled.div`
   width: 100%;
   height: 10rem;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 1rem;
   a {
     display: flex;
     flex-direction: row;
@@ -20,7 +20,7 @@ export const Banner = styled.div`
     }
     p {
       font-size: 3rem;
-      margin: 0 1rem;
+      margin: 0 0 0 1rem
     }
   }
 `;
@@ -167,7 +167,7 @@ export const NewLatter = styled.div`
   gap: 5px;
   border-radius: 10px;
   align-items: center;
-  padding: 1rem;
+  padding: 0 0 1rem 0  ;
 
   p {
     font-size: 0.9em !important;
@@ -177,4 +177,10 @@ export const NewLatter = styled.div`
     font-size: 13px;
     min-height: 8rem;
   }
+`;
+
+export const Marca = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
 `;

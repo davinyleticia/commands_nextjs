@@ -6,6 +6,7 @@ import {
   Banner,
   Card,
   Li,
+  Marca,
   NewLatter,
   Text,
   TitleProject,
@@ -28,7 +29,7 @@ const Blog = ({ itemsApi }) => {
           <Banner>
             <a href="./tipsbook">
               <TBIco />
-              <p>TipsBook</p>®️
+              <p>TipsBook</p><Marca>®️</Marca>
             </a>
           </Banner>
           <hr></hr>
