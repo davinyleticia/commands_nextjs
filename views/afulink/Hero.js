@@ -10,8 +10,8 @@ const Hero = () => {
             <div className="pr-lg-5">
               <p className="text-uppercase text-primary font-weight-medium f-14 mb-4">O que fazemos...</p>
               <h1 className="mb-4 font-weight-normal line-height-1_4">Tranformando o mundo através do <span className="text-primary font-weight-medium">Código</span></h1>
-              <p className="text-muted mb-1 pb-2">Nós somos especialistas em aulas in company e desenvolvimento de software personalizado. Transformamos sua equipe em talentos digitais e criamos soluções tecnológicas incríveis para sua marca.</p>
-              <p className="text-muted mb-4 pb-2">Vamos conversar?.</p>
+              <p className="text-muted mb-1 pb-2">Nós somos especialistas em aulas <strong>in company</strong> e <strong>desenvolvimento de software personalizado</strong>. Transformamos sua equipe em talentos digitais e criamos soluções tecnológicas sob medida.</p>
+              <p className="text-muted mb-4 pb-2">Vamos conversar?</p>
               <a href="mailto://team@afu.link#" className="btn btn-warning">
                 Contato<span className="ml-2 right-icon">&#8594;</span>
               </a>
