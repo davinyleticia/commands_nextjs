@@ -1,6 +1,6 @@
 import Layout from "../views/afulink/components/Layout";
 import Header from "../views/afulink/components/header/Header";
-import Footer from "../views/afulink/Footer";
+import Footer from "../views/afulink/components/Footer";
 import PolicyPage from "../views/afulink/policy";
 
 const Policy = () => {

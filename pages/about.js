@@ -1,6 +1,6 @@
 import Layout from "../views/afulink/components/Layout";
 import AboutAfuLink from "../views/afulink/About";
-import Footer from "../views/afulink/Footer";
+import Footer from "../views/afulink/components/Footer";
 import HeaderAfulik from "../views/afulink/components/header/Header";
 
 const is_render = (url, options) => {

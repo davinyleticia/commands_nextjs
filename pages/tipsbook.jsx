@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Layout from "../views/afulink/components/Layout";
 import HeaderAfulik from "../views/afulink/components/header/Header";
-import Footer from "../views/afulink/Footer";
+import Footer from "../views/afulink/components/Footer";
 import Blog from "../views/afulink/blog";
 
 
