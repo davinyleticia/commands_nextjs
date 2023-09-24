@@ -78,7 +78,7 @@ const Footer = () => {
         <Col md={12}>
           <div className="text-center text-muted">
             <p className="mb-0 f-15">
-              Todos direitos reservado -  logomarca e o nome Afulink© e Tipsbook©
+              Todos direitos reservado -  logomarca e o nome Afulink®️ e Tipsbook®️
               é protegido por direito de patente.
             </p>
           </div>
