@@ -17,7 +17,7 @@ const Detail = ({ itemsApi }) => {
           <Banner>
           <a href="../tipsbook">
               <TBIco />
-              <p>TipsBook®️</p>
+              <p>TipsBook</p>®️
             </a>
           </Banner>
           <hr></hr>
