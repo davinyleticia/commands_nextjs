@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import Parceria from './parceria/Parceria';
+import Parceria from './components/parceria/Parceria';
 
 const Hero = () => {
   return (

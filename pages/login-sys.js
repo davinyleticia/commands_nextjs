@@ -1,5 +1,5 @@
-import Layout from "../views/afulink/Layout";
-import Header from "../views/afulink/header/Header";
+import Layout from "../views/afulink/components/Layout";
+import Header from "../views/afulink/components/header/Header";
 import Login from "../views/afulink/login/login";
 import Footer from "../views/afulink/Footer";
 

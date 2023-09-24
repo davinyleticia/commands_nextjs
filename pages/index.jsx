@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
-import Layout from "../views/afulink/Layout";
-import HeaderAfulik from "../views/afulink/header/Header";
+import Layout from "../views/afulink/components/Layout";
+import HeaderAfulik from "../views/afulink/components/header/Header";
 import Hero from "../views/afulink/Hero";
-import Footer from "../views/afulink/Footer";
+import Footer from "../views/afulink/components/Footer";
 import HomeCommad from "../views/command/HomeCommand";
 import HeaderCommand from "../views/command/partials/Header/HeaderCommand";
 

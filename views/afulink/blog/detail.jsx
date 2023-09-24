@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
-import TBIco from "../ico/tb";
+import TBIco from "../components/ico/tb";
 import { Banner, Card, Li, Text, Title, TitleProject, Ul } from "./styled";
 
 const Detail = ({ itemsApi }) => {

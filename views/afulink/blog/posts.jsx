@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { GrSend } from "react-icons/gr";
 import { Button, Container, Input } from "reactstrap";
-import TBIco from "../ico/tb";
+import TBIco from "../components/ico/tb";
 import {
   Banner,
   Card,
