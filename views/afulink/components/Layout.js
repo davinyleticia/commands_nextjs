@@ -1,7 +1,7 @@
-import React from 'react';
-import Head from 'next/head';
+import React from "react";
+import Head from "next/head";
 
-const Layout = ({children, pageTitle, favicon = './favicon.svg'}) => {
+const Layout = ({ children, pageTitle, favicon = "./favicon.svg" }) => {
   return (
     <div>
       <Head>
@@ -14,12 +14,14 @@ const Layout = ({children, pageTitle, favicon = './favicon.svg'}) => {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3182119963461273"
+          crossorigin="anonymous"
+        ></script>
       </Head>
-      <div>
-        {children}
-      </div>
-
+      <div>{children}</div>
     </div>
-  )
-}
+  );
+};
 export default Layout;
