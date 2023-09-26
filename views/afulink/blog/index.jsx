@@ -46,6 +46,20 @@ const Blog = ({ itemsApi }) => {
                 Inscrever-se (Grátis) <GrSend />
               </Button>
             </NewLatter>
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3182119963461273"
+              crossorigin="anonymous"
+            ></script>
+            <ins
+              class="adsbygoogle"
+              style="display:block"
+              data-ad-client="ca-pub-3182119963461273"
+              data-ad-slot="4888533084"
+              data-ad-format="auto"
+              data-full-width-responsive="true"
+            ></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             <Ul>
               {itemsApi?.map((item) => (
                 <Li key={item.id}>
@@ -67,11 +81,11 @@ const Blog = ({ itemsApi }) => {
               ))}
             </Ul>
             <NewLatter>
-              <h3>
-                        Canal TipsBook no Youtube
-              </h3>
-              <p>Junte-se à nossa turma também no youtube: segue, compatilhe e deixe o seu joinha:</p>
-             
+              <h3>Canal TipsBook no Youtube</h3>
+              <p>
+                Junte-se à nossa turma também no youtube: segue, compatilhe e
+                deixe o seu joinha:
+              </p>
             </NewLatter>
           </React.Fragment>
         </Container>
