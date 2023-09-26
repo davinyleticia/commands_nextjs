@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import script from "next/script";
 import { GrSend } from "react-icons/gr";
 import { Button, Container, Input } from "reactstrap";
 import TBIco from "../components/ico/tb";
@@ -46,20 +47,17 @@ const Blog = ({ itemsApi }) => {
                 Inscrever-se (Grátis) <GrSend />
               </Button>
             </NewLatter>
-            <script
-              async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3182119963461273"
-              crossorigin="anonymous"
-            ></script>
-            <ins
-              class="adsbygoogle"
-              style="display:block"
+            <amp-ad
+              width="100vw"
+              height="320"
+              type="adsense"
               data-ad-client="ca-pub-3182119963461273"
               data-ad-slot="4888533084"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-            ></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+              data-auto-format="rspv"
+              data-full-width=""
+            >
+              <div overflow=""></div>
+            </amp-ad>
             <Ul>
               {itemsApi?.map((item) => (
                 <Li key={item.id}>
