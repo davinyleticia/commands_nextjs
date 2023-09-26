@@ -21,7 +21,7 @@ function Depositions() {
             as nossas necessidades e objetivos específicos, o que foi
             fundamental para o sucesso do projeto.
           </p>
-          <spam>Marcela Serra - ST adv</spam>
+          <spam>Marcela Serra - ST ADV</spam>
         </Card>
       </Content>
     </Container>
