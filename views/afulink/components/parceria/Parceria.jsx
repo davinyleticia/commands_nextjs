@@ -22,7 +22,7 @@ function Parceria() {
         <img
           width={110}
           height={110}
-          src="https://st.adv.br/public/static/img/logo.png"
+          src="https://acordo.link/public/static/img/logo.png"
         />
       </Content>
     </Container>
