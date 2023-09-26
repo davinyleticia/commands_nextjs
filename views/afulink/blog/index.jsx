@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from "react";
-import script from "next/script";
 import { GrSend } from "react-icons/gr";
 import { Button, Container, Input } from "reactstrap";
+import Adsense from "../components/adsense/adsense";
 import TBIco from "../components/ico/tb";
 import {
   Banner,
   Card,
-  Li,
-  Marca,
-  NewLatter,
+  Li, NewLatter,
   Text,
   TitleProject,
   Ul,
-  Url,
+  Url
 } from "./styled";
 
 const Blog = ({ itemsApi }) => {
@@ -47,17 +45,7 @@ const Blog = ({ itemsApi }) => {
                 Inscrever-se (Grátis) <GrSend />
               </Button>
             </NewLatter>
-            <amp-ad
-              width="100vw"
-              height="320"
-              type="adsense"
-              data-ad-client="ca-pub-3182119963461273"
-              data-ad-slot="4888533084"
-              data-auto-format="rspv"
-              data-full-width=""
-            >
-              <div overflow=""></div>
-            </amp-ad>
+            <Adsense/>
             <Ul>
               {itemsApi?.map((item) => (
                 <Li key={item.id}>

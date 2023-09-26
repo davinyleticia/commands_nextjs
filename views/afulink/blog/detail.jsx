@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
 import TBIco from "../components/ico/tb";
 import { Banner, Text, Title } from "./styled";
+import Adsense from "../components/adsense/adsense";
 
 const Detail = ({ itemsApi }) => {
   const [isClient, setIsClient] = useState(false);
@@ -36,17 +37,7 @@ const Detail = ({ itemsApi }) => {
                   </div>
                 ))}
               </div>
-              <amp-ad
-                width="100vw"
-                height="320"
-                type="adsense"
-                data-ad-client="ca-pub-3182119963461273"
-                data-ad-slot="4888533084"
-                data-auto-format="rspv"
-                data-full-width=""
-              >
-                <div overflow=""></div>
-              </amp-ad>
+              <Adsense/>
             </>
           </React.Fragment>
         </Container>
