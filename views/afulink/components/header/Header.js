@@ -7,7 +7,7 @@ import {
   NavLink,
   Container,
 } from "reactstrap";
-import { NavbarHeader, Image, Item } from "./header.styled";
+import { NavbarHeader, Image, Item, Marca } from "./header.styled";
 
 const Header = ({ url = '/', isTipsbook }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +32,7 @@ const Header = ({ url = '/', isTipsbook }) => {
         <Container>
          {!isTipsbook && (<NavbarHeader href={url}>
             <Image src={`${url}/images/logo.svg`} width={40} height={40} />
-            <h1>afulink</h1>®️
+            <h1>afulink</h1>
           </NavbarHeader>)}
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>

@@ -29,7 +29,7 @@ const Blog = ({ itemsApi }) => {
           <Banner>
             <a href="./tipsbook">
               <TBIco />
-              <p>TipsBook</p><Marca>®️</Marca>
+              <p>TipsBook</p>
             </a>
           </Banner>
           <hr></hr>

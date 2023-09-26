@@ -18,6 +18,12 @@ export const Banner = styled.div`
       text-decoration: none;
       color: #000;
     }
+    :after {
+      content: "®️";
+      font-size: 1rem;
+      position: relative;
+      top: -1rem; /* Adjust the value to position it as desired */
+    }
     p {
       font-size: 3rem;
       margin: 0 0 0 1rem
@@ -177,10 +183,4 @@ export const NewLatter = styled.div`
     font-size: 13px;
     min-height: 8rem;
   }
-`;
-
-export const Marca = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-content: flex-start;
 `;
