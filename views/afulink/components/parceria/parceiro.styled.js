@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
-export const Titulo = styled.h2`
+export const Titulo = styled.h4`
   padding-top: 1rem;
   text-align: center;
 `;

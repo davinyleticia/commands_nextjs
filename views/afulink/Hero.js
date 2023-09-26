@@ -26,6 +26,7 @@ const Hero = () => {
         </Row>
         <hr></hr>
         <Parceria/>
+        <hr></hr>
         <Depositions/>
       </Container>
   );
