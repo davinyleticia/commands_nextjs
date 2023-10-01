@@ -13,13 +13,13 @@ function Depositions() {
       <Content>
         <Card>
           <p>
-            Eu tive o privilégio de trabalhar com a equipe da Afulink para criar
+            "Eu tive o privilégio de trabalhar com a equipe da Afulink para criar
             um software sob medida para a minha empresa e gostaria de
             compartilhar a minha experiência. Desde o primeiro contato até a
             entrega final, a Afulink demonstrou um comprometimento excepcional
             com o sucesso do projeto. Eles começaram por entender profundamente
             as nossas necessidades e objetivos específicos, o que foi
-            fundamental para o sucesso do projeto.
+            fundamental para o sucesso do projeto."
           </p>
           <spam>Marcela Serra - ST ADV</spam>
         </Card>
