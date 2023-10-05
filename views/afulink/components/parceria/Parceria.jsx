@@ -15,7 +15,7 @@ function Parceria() {
         <img
           width={110}
           height={110}
-          src="https://media.licdn.com/dms/image/C4E0BAQEuf72oTAIzDw/company-logo_200_200/0/1619578202545?e=1696464000&v=beta&t=xOEh7QVQt3MWrFwRMOKa8mgDAZCzQcbjtKlivSrjBLk"
+          src="https://media.licdn.com/dms/image/D4D0BAQHNHrTqEZ2S9w/company-logo_200_200/0/1690851311343?e=1704326400&v=beta&t=vwKao4rNdVIhfAq9ARBHYvJoU3POKDEt63M_Zem9pDQ"
         />
         <TodasLetrasIco />
         <ReprogramaIco />
