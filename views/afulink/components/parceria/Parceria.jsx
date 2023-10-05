@@ -15,7 +15,7 @@ function Parceria() {
         <img
           width={110}
           height={110}
-          src="./images/codivas.png"
+          src="https://codivas.com.br/assets/img/logo-codivas-horizontal.png"
         />
         <TodasLetrasIco />
         <ReprogramaIco />
