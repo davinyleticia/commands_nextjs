@@ -13,8 +13,8 @@ function Parceria() {
       <Content>
         <DIOIco />
         <img
-          width={110}
-          height={110}
+          width={250}
+          height={90}
           src="https://codivas.com.br/assets/img/logo-codivas-horizontal.png"
         />
         <TodasLetrasIco />
