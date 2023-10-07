@@ -35,3 +35,20 @@
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
+
+.link-cursos > a:hover{
+  color: aliceblue;
+}
+
+.ico-cursos {
+  font-size: 50px;
+  padding: 1rem 0;
+}
+
+.card-cursos{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

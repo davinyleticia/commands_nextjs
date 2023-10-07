@@ -1,7 +1,7 @@
-import Layout from "../views/afulink/components/Layout";
-import Header from "../views/afulink/components/header/Header";
-import Footer from "../views/afulink/components/Footer";
-import PolicyPage from "../views/afulink/policy";
+import Layout from "../src/afulink/components/Layout";
+import Header from "../src/afulink/components/header/Header";
+import Footer from "../src/afulink/components/Footer";
+import PolicyPage from "../src/afulink/policy";
 
 const Policy = () => {
   return (

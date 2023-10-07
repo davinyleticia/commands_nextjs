@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Layout from "../../../src/afulink/components/Layout";
 import HeaderAfulik from "../../../src/afulink/components/header/Header";
 import Footer from "../../../src/afulink/components/Footer";
-import Detail from "../../../src/afulink/blog/detail";
+import Detail from "../../../src/afulink/cursos/detail";
 
 // 15 minutos
 const CACHE_IN_SECONDS_TIME = 900;
@@ -22,7 +22,7 @@ const Tipsbook = ({ host, itemsApi, slug }) => {
   return (
     <>
       {renderAfulik && (
-        <Layout pageTitle={`TipsBook - ${capitalizeFirstLetter(slug.replace(/-/g, ' '))}`} favicon={"/images/logo-tp.svg"}>
+        <Layout pageTitle={`TipsBook - ${capitalizeFirstLetter(slug.replace(/-/g, ' '))}`} favicon={"/images/logo.svg"}>
           <HeaderAfulik url={"../"} isTipsbook={true} />
           <Detail itemsApi={itemsApi} />
           <Footer />
@@ -31,7 +31,7 @@ const Tipsbook = ({ host, itemsApi, slug }) => {
       {renderCommand &&
         (window.location.href = "https://commands.views.page/tipsbo")}
       {localhost && (
-        <Layout ppageTitle={`TipsBook - ${capitalizeFirstLetter(slug.replace(/-/g, ' '))}`} favicon={"/images/logo-tp.svg"}>
+        <Layout ppageTitle={`TipsBook - ${capitalizeFirstLetter(slug.replace(/-/g, ' '))}`} favicon={"/images/logo.svg"}>
          <HeaderAfulik url={"../"} isTipsbook={true} />
           <Detail itemsApi={itemsApi} />
           <Footer />

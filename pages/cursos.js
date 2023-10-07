@@ -2,14 +2,14 @@ import { useRouter } from "next/router";
 import Layout from "../src/afulink/components/Layout";
 import HeaderAfulik from "../src/afulink/components/header/Header";
 import Footer from "../src/afulink/components/Footer";
-import Blog from "../src/afulink/blog";
+import PlayList from "../src/afulink/cursos/playList";
 
 
 // 15 minutos
 const CACHE_IN_SECONDS_TIME = 900;
 
 
-const Tipsbook = ({ host, itemsApi }) => {
+const Cursos = ({ host, itemsApi }) => {
   const router = useRouter();
   const { id } = router.query;
 
@@ -20,9 +20,9 @@ const Tipsbook = ({ host, itemsApi }) => {
   return (
     <>
       {renderAfulik && (
-        <Layout pageTitle="TipsBook" favicon={"/images/logo-tp.svg"}>
+        <Layout pageTitle="Cursos" favicon={"/images/logo.svg"}>
           <HeaderAfulik url={"."} isTipsbook={true} />
-          <Blog itemsApi={itemsApi}/>
+          <PlayList itemsApi={itemsApi}/>
           <Footer />
         </Layout>
       )}
@@ -30,9 +30,9 @@ const Tipsbook = ({ host, itemsApi }) => {
         window.location.href = "https://commands.views.page/tipsbo"
       )}
       {localhost && (
-        <Layout pageTitle="TipsBook" favicon={"/images/logo-tp.svg"}>
+        <Layout pageTitle="Cursos" favicon={"/images/logo.svg"}>
         <HeaderAfulik url={"."} isTipsbook={true}/>
-        <Blog itemsApi={itemsApi}/>
+        <PlayList itemsApi={itemsApi}/>
         <Footer />
       </Layout>
       )}
@@ -40,10 +40,10 @@ const Tipsbook = ({ host, itemsApi }) => {
   );
 };
 
-export default Tipsbook;
+export default Cursos;
 
 async function fetchGitHubAPI() {
-  const res = await fetch("https://app.dnys.dev/wp-json/wp/v2/posts?categories=1");
+  const res = await fetch("https://app.dnys.dev/wp-json/wp/v2/posts?categories=5");
   if (!res.ok) {
     throw new Error(res.status);
   }

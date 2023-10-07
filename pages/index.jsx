@@ -1,10 +1,8 @@
 import { useRouter } from "next/router";
-import Layout from "../views/afulink/components/Layout";
-import HeaderAfulik from "../views/afulink/components/header/Header";
-import Hero from "../views/afulink/Hero";
-import Footer from "../views/afulink/components/Footer";
-import HomeCommad from "../views/command/HomeCommand";
-import HeaderCommand from "../views/command/partials/Header/HeaderCommand";
+import Layout from "../src/afulink/components/Layout";
+import HeaderAfulik from "../src/afulink/components/header/Header";
+import Hero from "../src/afulink/Hero";
+import Footer from "../src/afulink/components/Footer";
 
 const Index = ({ host }) => {
   const router = useRouter();
@@ -24,10 +22,7 @@ const Index = ({ host }) => {
         </Layout>
       )}
       {renderCommand && (
-        <Layout pageTitle="Commads Views Page" favicon={"/images/favicon.svg"}>
-          <HeaderCommand />
-          <HomeCommad id={id || "bashBasico"} />
-        </Layout>
+        window.location.href = "https://commands.views.page/tipsbo"
       )}
       {localhost && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
