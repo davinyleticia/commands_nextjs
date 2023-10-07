@@ -4,6 +4,7 @@ import HeaderAfulik from "../src/afulink/components/header/Header";
 import Hero from "../src/afulink/Hero";
 import Footer from "../src/afulink/components/Footer";
 import HomeCommad from "../src/command/HomeCommand";
+import HeaderCommand from "../src/command/partials/Header/HeaderCommand";
 
 const Index = ({ host }) => {
   const router = useRouter();
