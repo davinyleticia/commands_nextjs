@@ -25,7 +25,7 @@ const Blog = ({ itemsApi }) => {
       {isClient ? (
         <Container>
           <Banner>
-            <a href="./tipsbook">
+            <a href="./">
               <TBIco />
               <p>TipsBook</p>
             </a>
@@ -36,7 +36,7 @@ const Blog = ({ itemsApi }) => {
             <Ul>
               {itemsApi?.map((item) => (
                 <Li key={item.id}>
-                  <Url href={`tipsbook/${item.slug}`}>
+                  <Url href={`post/${item.slug}`}>
                     <img
                       src={item.image || "./images/fundo.jpg"}
                       alt={item.name}
