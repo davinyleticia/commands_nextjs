@@ -9,6 +9,7 @@ const Layout = ({ children, pageTitle, favicon = "./favicon.svg" }) => {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="google-adsense-account" content="ca-pub-3182119963461273"></meta>
         <link rel="shortcut icon" href={favicon} />
         <link
           rel="stylesheet"
