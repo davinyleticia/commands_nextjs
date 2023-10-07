@@ -26,7 +26,7 @@ export const Banner = styled.div`
     }
     p {
       font-size: 3rem;
-      margin: 0 0 0 1rem
+      margin: 0 0 0 1rem;
     }
   }
 `;
@@ -108,6 +108,7 @@ export const Url = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   text-decoration: none;
   padding: 1rem;
   :hover {
@@ -173,7 +174,7 @@ export const NewLatter = styled.div`
   gap: 5px;
   border-radius: 10px;
   align-items: center;
-  padding: 0 0 1rem 0  ;
+  padding: 0 0 1rem 0;
 
   p {
     font-size: 0.9em !important;

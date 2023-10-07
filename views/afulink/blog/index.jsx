@@ -33,18 +33,6 @@ const Blog = ({ itemsApi }) => {
           </Banner>
           <hr></hr>
           <React.Fragment>
-            <NewLatter>
-              <h3>
-                Notícias de Tecnologia para quem não tem tempo de ler notícias.
-              </h3>
-              <p>Junte-se à nossa turma de 115.065 leitores ativos:</p>
-              <div classname=" mt-3">
-                <Input placeholder="Seu E-mail Principal" />
-              </div>
-              <Button className="btn btn-warning mt-3">
-                Inscrever-se (Grátis) <GrSend />
-              </Button>
-            </NewLatter>
             <Adsense/>
             <Ul>
               {itemsApi?.map((item) => (
