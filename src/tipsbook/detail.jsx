@@ -17,7 +17,7 @@ const Detail = ({ itemsApi }) => {
       {isClient ? (
         <Container>
           <Banner>
-            <a href="../tipsbook">
+            <a href="../">
               <TBIco />
               <p>TipsBook</p>
             </a>
