@@ -3,6 +3,7 @@ import Layout from "../src/afulink/components/Layout";
 import HeaderAfulik from "../src/afulink/components/header/Header";
 import Hero from "../src/afulink/Hero";
 import Footer from "../src/afulink/components/Footer";
+import HomeCommad from "../src/command/HomeCommand";
 
 const Index = ({ host }) => {
   const router = useRouter();
@@ -22,7 +23,10 @@ const Index = ({ host }) => {
         </Layout>
       )}
       {renderCommand && (
-        window.location.href = "https://commands.views.page/tipsbo"
+        <Layout pageTitle="Commands Views Page" favicon={"/images/favicon.svg"}>
+          <HeaderCommand url={"."} />
+          <HomeCommad />
+        </Layout>
       )}
       {localhost && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
