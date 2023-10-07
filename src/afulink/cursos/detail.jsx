@@ -1,9 +1,7 @@
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
-import TBIco from "../components/ico/tb";
-import { Banner, BannerDetail, Text, Title } from "./styled";
-import Adsense from "../components/adsense/adsense";
-import Image from "next/image";
+import { BannerDetail, Text } from "./styled";
 
 const Detail = ({ itemsApi }) => {
   const [isClient, setIsClient] = useState(false);
@@ -40,7 +38,6 @@ const Detail = ({ itemsApi }) => {
                   </div>
                 ))}
               </div>
-              <Adsense />
             </>
           </React.Fragment>
         </Container>

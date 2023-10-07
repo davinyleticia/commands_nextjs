@@ -48,7 +48,7 @@ const Header = ({ url = '/', isTipsbook }) => {
                 <NavLink href="https://visite.la">Visite.la</NavLink>
               </Item>
               <Item>
-                <NavLink href={`${url}/tipsbook`}>TipsBook</NavLink>
+                <NavLink href={`https://tipsbook.com.br`}>TipsBook</NavLink>
               </Item>
               <Item>
                 <NavLink href={`${url}/cursos`}>Cursos</NavLink>

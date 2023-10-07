@@ -5,6 +5,7 @@ import Hero from "../src/afulink/Hero";
 import Footer from "../src/afulink/components/Footer";
 import HomeCommad from "../src/command/HomeCommand";
 import HeaderCommand from "../src/command/partials/Header/HeaderCommand";
+import Blog from "../src/tipsbook";
 
 const Index = ({ host }) => {
   const router = useRouter();
@@ -12,6 +13,7 @@ const Index = ({ host }) => {
 
   const renderAfulik = host === "afu.link";
   const renderCommand = host === "commands.views.page";
+  const renderTipsbook = host == "tipsbook.com.br"
   const localhost = host === "localhost:3000";
 
   return (
@@ -27,6 +29,13 @@ const Index = ({ host }) => {
         <Layout pageTitle="Commands Views Page" favicon={"/images/favicon.svg"}>
           <HeaderCommand url={"."} />
           <HomeCommad />
+        </Layout>
+      )}
+      {renderTipsbook && (
+        <Layout pageTitle="TipsBook" favicon={"/images/logo-tp.svg"}>
+          <HeaderAfulik url={"."} isTipsbook={true} />
+          <Blog itemsApi={itemsApi}/>
+          <Footer />
         </Layout>
       )}
       {localhost && (

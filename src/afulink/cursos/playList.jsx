@@ -1,14 +1,11 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { GrSend } from "react-icons/gr";
-import { Button, Container, Input } from "reactstrap";
-import Adsense from "../components/adsense/adsense";
-import TBIco from "../components/ico/tb";
+import { Container } from "reactstrap";
+
 import {
   Banner,
   Card,
-  Li, NewLatter,
-  Text,
+  Li, Text,
   TitleProject,
   Ul,
   Url
@@ -34,7 +31,6 @@ const PlayList = ({ itemsApi }) => {
           </Banner>
           <hr></hr>
           <React.Fragment>
-            <Adsense/>
             <Ul>
               {itemsApi?.map((item) => (
                 <Li key={item.id}>
