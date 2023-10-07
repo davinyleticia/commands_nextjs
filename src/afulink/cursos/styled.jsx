@@ -119,7 +119,6 @@ export const Li = styled.li`
     opacity: 0.8;
   }
   img {
-    border-radius: 50%;
     width: 10rem;
     height: 10rem;
   }
