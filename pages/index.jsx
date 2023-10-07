@@ -27,7 +27,7 @@ const Index = ({ host }) => {
       )}
       {renderCommand && (
         <Layout pageTitle="Commands Views Page" favicon={"/images/favicon.svg"}>
-          <HeaderCommand url={"."} />
+          <HeaderCommand url={"."} id={id}/>
           <HomeCommad />
         </Layout>
       )}
