@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "reactstrap";
-import TBIco from "../components/ico/tb";
+import TBIco from "./components/ico/tb";
 import { Banner, Text, Title } from "./styled";
-import Adsense from "../components/adsense/adsense";
+import Adsense from "./components/adsense/adsense";
 
 const Detail = ({ itemsApi }) => {
   const [isClient, setIsClient] = useState(false);
