@@ -14,6 +14,7 @@ const Tipsbook = ({ host, itemsApi, slug }) => {
 
   const renderAfulik = host === "afu.link";
   const renderCommand = host === "commands.views.page";
+  const renderTipsbook = host == "tipsbook.com.br"
   const localhost = host === "localhost:3000";
 
   function capitalizeFirstLetter(string) {
@@ -22,7 +23,7 @@ const Tipsbook = ({ host, itemsApi, slug }) => {
 
   return (
     <>
-      {renderAfulik && (
+      {renderTipsbook && (
         <Layout pageTitle={`TipsBook - ${capitalizeFirstLetter(slug.replace(/-/g, ' '))}`} favicon={"/images/logo-tp.svg"}>
           <HeaderAfulik url={"../"} isTipsbook={true} />
           <Detail itemsApi={itemsApi} />
@@ -31,6 +32,10 @@ const Tipsbook = ({ host, itemsApi, slug }) => {
       )}
       {renderCommand &&
         (window.location.href = "https://commands.views.page/tipsbo")}
+
+      {renderAfulik &&
+        (window.location.href = "https://afu.link")}
+      
       {localhost && (
         <Layout ppageTitle={`TipsBook - ${capitalizeFirstLetter(slug.replace(/-/g, ' '))}`} favicon={"/images/logo-tp.svg"}>
          <HeaderAfulik url={"../"} isTipsbook={true} />
