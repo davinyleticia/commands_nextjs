@@ -2,7 +2,8 @@ import { useRouter } from "next/router";
 import Layout from "../../../src/afulink/components/Layout";
 import HeaderAfulik from "../../../src/afulink/components/header/Header";
 import Footer from "../../../src/afulink/components/Footer";
-import Detail from "../../../src/afulink/blog/detail";
+import Detail from "../../../src/tipsbook/detail";
+
 
 // 15 minutos
 const CACHE_IN_SECONDS_TIME = 900;
