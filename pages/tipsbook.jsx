@@ -43,7 +43,7 @@ const Tipsbook = ({ host, itemsApi }) => {
 export default Tipsbook;
 
 async function fetchGitHubAPI() {
-  const res = await fetch("https://app.dnys.dev/wp-json/wp/v2/posts/");
+  const res = await fetch("https://app.dnys.dev/wp-json/wp/v2/posts?categories=1");
   if (!res.ok) {
     throw new Error(res.status);
   }
