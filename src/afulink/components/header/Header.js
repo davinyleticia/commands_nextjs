@@ -42,7 +42,7 @@ const Header = ({ url = '/', isTipsbook }) => {
               </Item>
               ):(
                 <Item>
-                <NavLink href="/">Afulink</NavLink>
+                <NavLink href="https://afu.link">Afulink</NavLink>
               </Item>)}
               <Item>
                 <NavLink href="https://visite.la">Visite.la</NavLink>
@@ -51,7 +51,7 @@ const Header = ({ url = '/', isTipsbook }) => {
                 <NavLink href={`https://tipsbook.com.br`}>TipsBook</NavLink>
               </Item>
               <Item>
-                <NavLink href={`${url}/cursos`}>Cursos</NavLink>
+                <NavLink href={`https://afu.link/cursos`}>Cursos</NavLink>
               </Item>
               {/* <NavItem>
                 <NavLink href={`${url}/login-sys`}>Login</NavLink>
