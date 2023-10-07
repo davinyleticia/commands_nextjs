@@ -31,20 +31,20 @@ const Index = ({ host, itemsApi }) => {
           <HomeCommad id={id} />
         </Layout>
       )}
-      {localhost && (
+      {renderTipsbook && (
         <Layout pageTitle="TipsBook" favicon={"/images/logo-tp.svg"}>
           <HeaderAfulik url={"."} isTipsbook={true} />
           <Blog itemsApi={itemsApi}/>
           <Footer />
         </Layout>
       )}
-      {/* {localhost && (
+      {localhost && (
         <Layout pageTitle="Afulink Informática" favicon={"/images/logo.svg"}>
           <HeaderAfulik url={"."} />
           <Hero />
           <Footer />
         </Layout>
-      )} */}
+      )}
     </>
   );
 };
