@@ -28,7 +28,6 @@ const Index = ({ host }) => {
     </>
   );
 };
-
 export default Index;
 
 
