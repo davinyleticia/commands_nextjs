@@ -25,13 +25,20 @@ export default function HomeCommad({ id }) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  
+
   useEffect(() => {
     let abortController = new AbortController();
 
+    let queryString = "";
+    if (tagSearch) {
+      queryString = `${tagSearch}`;
+    } else {
+      queryString = "bashBasico";
+    }
+
     function getAPI() {
       //   fetch("https://command.views.page/api/command")
-      fetch(`./api/${tagSearch || "bashBasico"} `)
+      fetch(`./api/${queryString} `)
         .then(async (res) => {
           if (!res.ok) {
             setItemsApi([]);
@@ -72,7 +79,6 @@ export default function HomeCommad({ id }) {
     },
     [searchParams]
   );
-
 
   useEffect(() => {
     setTagSearch(id);
@@ -125,8 +131,9 @@ export default function HomeCommad({ id }) {
       {itemsApi.length === 0 && <NotFound />}
       <Footer>
         Todos direitos reservados -{" "}
-        <a href="mailto://team@afu.link">Feedback</a> - criado por Daviny Letícia - patrocinado por  <a href="https://afu.link">Afulink®️</a> - feito com
-        ❤️ São Paulo - Brasil
+        <a href="mailto://team@afu.link">Feedback</a> - criado por Daviny
+        Letícia - patrocinado por <a href="https://afu.link">Afulink®️</a> -
+        feito com ❤️ São Paulo - Brasil
       </Footer>
     </Container>
   );
