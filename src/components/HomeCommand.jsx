@@ -96,7 +96,7 @@ export default function HomeCommad({ id }) {
           <LinkTag onClick={() => play("git")}>#Git</LinkTag>
         </Description>
 
-        <SearchTitle>Resultado: {tagSearch} </SearchTitle>
+        <SearchTitle>Resultado: {tagSearch || "bashBasico"} </SearchTitle>
         {itemsApi.length > 0 && (
           <>
             <Ul>
