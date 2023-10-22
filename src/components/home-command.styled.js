@@ -139,3 +139,13 @@ export const Footer = styled.div`
 text-align: center;
 padding: 1rem;
 `;
+
+export const LinkUrl = styled.a`
+  cursor: pointer;
+  padding: 0 0.5rem;
+  color: #0066;
+
+  &:hover {
+    color: #000;
+  }
+`;

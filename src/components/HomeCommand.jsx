@@ -11,6 +11,7 @@ import {
   Footer,
   Li,
   LinkTag,
+  LinkUrl,
   SearchTitle,
   Text,
   TitleProject,
@@ -131,8 +132,8 @@ export default function HomeCommad({ id }) {
       {itemsApi.length === 0 && <NotFound />}
       <Footer>
         Todos direitos reservados -{" "}
-        <a href="mailto://team@afu.link">Feedback</a> - criado por <a href="https://daviny.dev">Daviny
-        Letícia</a> - patrocinado por <a href="https://afu.link">Afulink®️</a> -
+        <LinkUrl href="mailto://team@afu.link">Feedback</LinkUrl> - Criado por <LinkUrl href="https://daviny.dev">Daviny
+        Letícia</LinkUrl> - Patrocinado por <LinkUrl href="https://afu.link">Afulink®️</LinkUrl> -
         feito com ❤️ São Paulo - Brasil
       </Footer>
     </Container>
