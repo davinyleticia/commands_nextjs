@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import Pagination from '../../components/Pagination/Pagination';
-import NotFoundNotifications from '../../components/NotFoundNotifications/NotFoundNotifications';
-import NotificationsCard from '../../components/NotificationsCard/NotificationsCard';
-import { Cads } from './Notifications.styled';
+import React, { useEffect, useState } from "react";
+import NotFoundNotifications from "../../components/NotFoundNotifications/NotFoundNotifications";
+import NotificationsCard from "../../components/NotificationsCard/NotificationsCard";
+import { Btn, Cads } from "./Notifications.styled";
 
-function NotificationBoard() {
+function NotificationBoard({ setIsVisible }) {
   const [notifications, setNotifications] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -12,8 +11,8 @@ function NotificationBoard() {
     let abortController = new AbortController();
 
     function getAPI() {
-    //   fetch("https://command.views.page/api/command")
-    fetch(`./api/notifications`)
+      //   fetch("https://command.views.page/api/command")
+      fetch(`./api/notifications`)
         .then(async (res) => {
           if (!res.ok) {
             throw new Error(res.status);
@@ -27,9 +26,9 @@ function NotificationBoard() {
     getAPI();
 
     return () => abortController.abort();
-  }, [ currentPage]);
+  }, [currentPage]);
 
-console.log(notifications)
+  console.log(notifications);
 
   return (
     <React.Fragment>
@@ -45,6 +44,7 @@ console.log(notifications)
                 id={elem.id}
               />
             ))}
+            <Btn onClick={() => setIsVisible(false)}>Fechar</Btn>
           </Cads>
         </React.Fragment>
       ) : (

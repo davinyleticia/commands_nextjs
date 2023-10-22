@@ -14,6 +14,5 @@ export default function handler(req, res) {
         description: "Adicionamos novos comando no #bash",
         link: "https://pt.dnys.dev",
       },
-
   ]);
   }

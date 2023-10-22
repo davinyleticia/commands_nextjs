@@ -29,18 +29,18 @@ function HeaderCommand() {
   return (
     <React.Fragment>
       <Container>
-        <ContentLeft onClick={() => setIsVisible(true)}>
+        <ContentLeft>
           {/* <MenuIco /> */}
-          <Text>COMMANDS VIEWS PAGE</Text>
+          <Text as="a" href="https://commands.views.page">COMMANDS VIEWS PAGE</Text>
         </ContentLeft>
-        <ContentRight>
+        <ContentRight onClick={() => setIsVisible((isVisible) => isVisible ? true : false )}>
           <Alert
             ShowNotifications={hanldenShowNotifications}
           />
         </ContentRight>
       </Container>
       {isVisible && (
-        <NotificationBoard/>
+        <NotificationBoard setIsVisible={setIsVisible} />
       )}
     </React.Fragment>
   );
