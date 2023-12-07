@@ -7,7 +7,7 @@ const Index = ({ host }) => {
   const router = useRouter();
   const { id } = router.query;
 
-  const renderCommand = host === "commands.views.page";
+  const renderCommand = host === "commands.viewpage.ink";
   const localhost = host === "localhost:3000";
 
   return (
