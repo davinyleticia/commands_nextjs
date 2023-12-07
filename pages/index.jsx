@@ -20,7 +20,7 @@ const Index = ({ host }) => {
       )}
 
       {localhost && (
-        <Layout pageTitle="Commands Views Page" favicon={"/images/favicon.svg"}>
+        <Layout pageTitle="Commands ViewPage" favicon={"/images/favicon.svg"}>
           <HeaderCommand url={"."} />
           <HomeCommad id={id} />
         </Layout>
