@@ -31,7 +31,7 @@ function HeaderCommand() {
       <Container>
         <ContentLeft>
           {/* <MenuIco /> */}
-          <Text as="a" href="https://commands.views.page">COMMANDS VIEWS PAGE</Text>
+          <Text as="a" href="https://commands.viewpage.ink">COMMANDS.VIEWPAGE.INK</Text>
         </ContentLeft>
         <ContentRight onClick={() => setIsVisible((isVisible) => isVisible ? true : false )}>
           <Alert
